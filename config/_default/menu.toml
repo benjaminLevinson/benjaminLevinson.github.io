@@ -1,0 +1,35 @@
+[[main]]
+identifier = "search"
+name = "search"
+url = "/search/"
+weight = 0
+
+[[main]]
+identifier = "essays"
+name = "essays"
+url = "/essays/"
+weight = 10
+
+[[main]]
+identifier = "slowcial media"
+name = "slowcial media"
+url = "/posts/"
+weight = 15
+
+# [[main]]
+# identifier = "categories"
+# name = "categories"
+# url = "/categories/"
+# weight = 20
+
+# [[main]]
+# identifier = "tags"
+# name = "tags"
+# url = "/tags/"
+# weight = 30
+
+[[main]]
+identifier = "projects"
+name = "projects"
+url = "/projects/"
+weight = 40
