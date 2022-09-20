@@ -103,7 +103,7 @@ mainSections = ["posts", "essays"]
 
   [[params.socialIcons]]
   name = "instagram"
-  url = "https://www.instagram.com/benjaminsonoflevi/"
+  url = "https://www.instagram.com/bjlevinson/"
 
   [[params.socialIcons]]
   name = "itchio"
