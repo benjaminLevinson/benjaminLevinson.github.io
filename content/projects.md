@@ -33,7 +33,6 @@ I really think I was on to something with the "tron" mode- give it a try, it's e
 ### @WikiControversy
 {{< tweet user="WikiControversy" id="1295828033463607298">}}
 I've always liked reading Wikipedia Controversy sections— they're always straight to the point. This bot surfaces random Wikipedia controversy sectiions and tweets a summary of them. Admittedly, many of the controversies it surfaces are pretty horrible; I didn't intend for the bot's content to be inflammatory but here we are.  
-I've always liked reading Wikipedia Controversy sections— they're always straight to the point. This bot surfaces random Wikipedia controversy sectiions and tweets a summary of them. Admittedly, many of the controversies it surfaces are pretty horrible; I didn't intend for the bot's content to be inflammatory but here we are.  
 [(@WikiControversy)](https://twitter.com/WikiControversy) • [(Github)](https://github.com/benjaminLevinson/wiki-controversy)
 
 ### @obituary_bot

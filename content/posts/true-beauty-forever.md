@@ -2,15 +2,14 @@
 title: "of Montreal at The Mohawk"
 date: 2020-09-15T11:30:03+00:00
 # weight: 1
-tags: ["concerts", "⭐️⭐️⭐️⭐️"]
-categories: "In Review"
+shelves: "concerts"
 author: "Benjamin Levinson"
 showToc: false
 draft: false
 hidemeta: false
-comments: false
+comments: true
 description: "of Montreal was killer - 9/11/22 - The Mohawk"
-canonicalURL: "https://blev.dev/to/page"
+canonicalURL: "https://blev.dev/posts/true-beauty-forever/"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
@@ -25,7 +24,7 @@ UseHugoToc: true
 cover:
     image: "images/concerts/2022/9-11-22-of-montreal-at-the-mohawk.gif"
     alt: "True Beauty Forever" # alt text
-    caption: "<text>" # display caption under cover
+    caption: "True Beauty Forever" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: false # only hide on current single page
 ---

@@ -1,9 +1,31 @@
 ---
-title: "Alfred, or \"How to super-charge Spotlight and automate routine tasks\""
-date: 2022-09-16T00:59:18-05:00
+title: "Alfred, or \"How to super-charge your Mac and automate routine tasks\""
+date: 2022-09-19T00:59:18-05:00
 draft: false
-shelves: "timesavers"
-link: "https://alfredapp.com"
+tags: ["timesavers"]
+showToc: true
+TocOpen: false
+hidemeta: false
+comments: true
+description: ""
+canonicalURL: "https://blev.dev/articles/alfred"
+disableHLJS: true # to disable highlightjs
+disableShare: false
+disableHLJS: false
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: true
+cover:
+    image: "<image path/url>" # image path/url
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
 ---
 I've been reading [_The Productive Programmer_](https://www.amazon.com/Productive-Programmer-Theory-Practice-OReilly/dp/0596519788/) for a book club and it's put me on a productivity binge. It's an older book and many of its recommendations no longer apply, so I got excited when, while researching modern alternatives for some of the tools the author recommends, I happened to stumble on [**Alfred**](https://alfredapp.com). Alfred is a replacement for the Mac spotlight that has already changed how I work. In fact, I was so excited by Alfred that within ten minutes of downloading, I immediately bought a "mega-supporter" license! And I almost never buy Mac software. It's that good!
 

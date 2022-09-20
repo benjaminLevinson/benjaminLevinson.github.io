@@ -5,9 +5,9 @@ url = "/search/"
 weight = 0
 
 [[main]]
-identifier = "essays"
-name = "essays"
-url = "/essays/"
+identifier = "articles"
+name = "articles"
+url = "/articles/"
 weight = 10
 
 [[main]]

@@ -9,6 +9,7 @@ buildExpired = false
 pygmentsUseClasses = true
 enableGitInfo = true
 enableEmoji = true
+disqusShortname = "blev-dev"
 
 [taxonomies]
   category = 'categories'
@@ -23,11 +24,11 @@ home = ['HTML', 'RSS', 'JSON']
 
 [params]
 env = "production"
-title = "Benjamin's "
-description = "ExampleSite description"
+title = "Benjamin's Bio"
+description = "Articles about my relationship with tech and a portal to access my slowcial media"
 keywords = [ "Blog", "Portfolio", "PaperMod" ]
 author = "Benjamin Levinson"
-images = [ "<link or path of image for opengraph, twitter-cards>" ]
+images = [ "images/headshot.png" ]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
@@ -41,7 +42,7 @@ ShowRssButtonInSectionTermList = true
 UseHugoToc = true
 disableSpecial1stPost = false
 disableScrollToTop = false
-comments = false
+comments = true
 hidemeta = false
 hideSummary = false
 showtoc = false
@@ -62,16 +63,16 @@ mainSections = ["posts", "essays"]
 
   [params.profileMode]
   enabled = true
-  title = "Benjamin Levinson"
-  subtitle = "blev"
+  title = "Benjamin Levinson (blev)"
+  subtitle = "Articles about my relationship with tech and a portal to access my slowcial media"
   imageUrl = "images/headshot.png"
   imageWidth = 300
   imageHeight = 300
   imageTitle = "Me in Millennium Park"
 
     [[params.profileMode.buttons]]
-    name = "Essays"
-    url = "essays"
+    name = "Articles"
+    url = "articles"
 
     [[params.profileMode.buttons]]
     name = "Slowcial media"
@@ -121,9 +122,9 @@ mainSections = ["posts", "essays"]
   name = "ycombinator"
   url = "https://news.ycombinator.com/user?id=blev"
 
-  [[params.socialIcons]]
-  name = "youtube"
-  url = "https://www.youtube.com/channel/UCSKlsiJ48w10O5mSVmjzbyQ"
+  # [[params.socialIcons]]
+  # name = "youtube"
+  # url = "https://www.youtube.com/channel/UCSKlsiJ48w10O5mSVmjzbyQ"
 
   [params.analytics.google]
   SiteVerificationTag = "XYZabc"
