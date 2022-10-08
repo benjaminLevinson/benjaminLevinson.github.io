@@ -33,3 +33,9 @@ identifier = "projects"
 name = "projects"
 url = "/projects/"
 weight = 40
+
+[[main]]
+identifier = "library"
+name = "library"
+url = "/library/"
+weight = 50
