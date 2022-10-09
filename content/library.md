@@ -12,7 +12,6 @@ Below is a catalog of media I have available for lending. I have accumulated lot
 A little guide: items in ***bold italics*** are media I really like and recommend. Items in *normal italics* are media I own but maybe haven't read/listened to/watched yet (or just didn't care for, but more likely the former).
 
 ## Books
-<!-- Note: the Kindle books that are on this list can be loaned out (surprisingly!). The loans typically last 14 days and you can read them on your Kindle, a Kindle app, or on your computer in the browser. Also, a Kindle book can be loaned only once to anyone, so be sure to finish it within the 14 days. -->
 
 ### Fiction
 * ***Blood Meridian*** - Cormac McCarthy
@@ -28,12 +27,10 @@ A little guide: items in ***bold italics*** are media I really like and recommen
 * *On The Road* - Jack Kerouac
 * ***Pale Fire*** - Vladimir Nabokov
 * *The Pale King* - David Foster Wallace
-<!-- * *The Rime of the Ancient Mariner* (Kindle edition) - Samuel Taylor Coleridge -->
 * ***The Road*** - Cormac McCarthy
 * ***Scoop*** - Evelyn Waugh
 * *Slaughterhouse-Five* - Kurt Vonnegut
 * *The Sound and the Fury* - William Faulkner
-<!-- * ***Solaris*** (Kindle edition) - Stanislaw Lem -->
 * ***Tinkers*** - Paul Harding
 * *To The Lighthouse* - Virginia Woolf
 * *White Noise* - Don Delillo
@@ -56,13 +53,9 @@ A little guide: items in ***bold italics*** are media I really like and recommen
 * *Season of Mists* - Neil Gaiman
 * *A Game of You* - Neil Gaiman
 #### Short stories
-<!-- * *"All You Zombies"* (Kindle edition) - Robert A. Heinlein -->
-<!-- * ***Orphans of the Sky*** (Kindle edition) - Robert A. Heinlein -->
-<!-- * *The Unpleasant Profession of Jonathan Hoag* (Kindle edition) - Robert A. Heinlein -->
 ### Non-fiction
 * *Maze: Solve the World's Most Challenging Puzzle* - Christopher Manson
 * ***Gödel, Escher, Bach: An Eternal Golden Braid*** - Douglas R. Hofstadter
-<!-- * *The Story Of Rock and Soul Music: Album Reviews and Lists (Kindle edition)* - Scott Floman -->
 #### Business
 * *The Four-Hour Work-Week* - Tim Ferriss
 * ***The Personal MBA*** - Josh Kaufman
@@ -72,7 +65,6 @@ A little guide: items in ***bold italics*** are media I really like and recommen
 * *Mastering Chess Tactics* - Neil McDonald
 * *Understanding Chess Middlegames* - John Nunn
 #### Deconstruction
-<!-- * ***Everything Belongs: The Gift of Contemplative Prayer*** (Kindle edition) - Richard Rohr -->
 * ***This*** - Michael Gungor
 * *You're A Miracle (and a a Pain in the Ass)* - Mike McHargue
 #### Essays
@@ -152,7 +144,7 @@ If you are borrowing a whole system, please take care not to delete my save file
 * *The Shape of Water*
 
 ## Music
-Items marked with a * are not available on all streaming services (Spotify, Apple Music) so this might be one of the easiest ways to add some of these albums to your library.
+Items marked with an asterisk * are not available on all streaming services (Spotify, Apple Music) so this might be one of the easiest ways to add some of these albums to your library.
 ### Cassette
 * *2014* - Ben Seretan
 * *Boingo Alive* - Oingo Boingo
@@ -209,4 +201,4 @@ Items marked with a * are not available on all streaming services (Spotify, Appl
 * ***Nuggets: Original Artyfacts from the First Psychedelic Era, 1965–1968***\*
 * ***To Our Children's Children's Children*** - The Moody Blues
 * ***Procol Harum*** - Procol Harum
-* ***The Wild, The innocent, & THe E Street Shuffle*** - Bruce Springsteen
+* ***The Wild, The innocent, & The E Street Shuffle*** - Bruce Springsteen
