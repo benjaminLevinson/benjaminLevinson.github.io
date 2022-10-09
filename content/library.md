@@ -1,5 +1,5 @@
 ---
-title: "Library"
+title: "Borrow my stuff"
 # description: "Description for Search"
 summary: "library"
 showToc: true
@@ -12,6 +12,8 @@ Below is a catalog of media I have available for lending. I have accumulated lot
 A little guide: items in ***bold italics*** are media I really like and recommend. Items in *normal italics* are media I own but maybe haven't read/listened to/watched yet (or just didn't care for, but more likely the former).
 
 ## Books
+<!-- Note: the Kindle books that are on this list can be loaned out (surprisingly!). The loans typically last 14 days and you can read them on your Kindle, a Kindle app, or on your computer in the browser. Also, a Kindle book can be loaned only once to anyone, so be sure to finish it within the 14 days. -->
+
 ### Fiction
 * ***Blood Meridian*** - Cormac McCarthy
 * *Catch-22* - Joseph Heller
@@ -26,10 +28,12 @@ A little guide: items in ***bold italics*** are media I really like and recommen
 * *On The Road* - Jack Kerouac
 * ***Pale Fire*** - Vladimir Nabokov
 * *The Pale King* - David Foster Wallace
+<!-- * *The Rime of the Ancient Mariner* (Kindle edition) - Samuel Taylor Coleridge -->
 * ***The Road*** - Cormac McCarthy
 * ***Scoop*** - Evelyn Waugh
 * *Slaughterhouse-Five* - Kurt Vonnegut
 * *The Sound and the Fury* - William Faulkner
+<!-- * ***Solaris*** (Kindle edition) - Stanislaw Lem -->
 * ***Tinkers*** - Paul Harding
 * *To The Lighthouse* - Virginia Woolf
 * *White Noise* - Don Delillo
@@ -51,9 +55,14 @@ A little guide: items in ***bold italics*** are media I really like and recommen
 * *Volume 3: The Dream Country* - Neil Gaiman
 * *Season of Mists* - Neil Gaiman
 * *A Game of You* - Neil Gaiman
+#### Short stories
+<!-- * *"All You Zombies"* (Kindle edition) - Robert A. Heinlein -->
+<!-- * ***Orphans of the Sky*** (Kindle edition) - Robert A. Heinlein -->
+<!-- * *The Unpleasant Profession of Jonathan Hoag* (Kindle edition) - Robert A. Heinlein -->
 ### Non-fiction
 * *Maze: Solve the World's Most Challenging Puzzle* - Christopher Manson
 * ***Gödel, Escher, Bach: An Eternal Golden Braid*** - Douglas R. Hofstadter
+<!-- * *The Story Of Rock and Soul Music: Album Reviews and Lists (Kindle edition)* - Scott Floman -->
 #### Business
 * *The Four-Hour Work-Week* - Tim Ferriss
 * ***The Personal MBA*** - Josh Kaufman
@@ -63,6 +72,7 @@ A little guide: items in ***bold italics*** are media I really like and recommen
 * *Mastering Chess Tactics* - Neil McDonald
 * *Understanding Chess Middlegames* - John Nunn
 #### Deconstruction
+<!-- * ***Everything Belongs: The Gift of Contemplative Prayer*** (Kindle edition) - Richard Rohr -->
 * ***This*** - Michael Gungor
 * *You're A Miracle (and a a Pain in the Ass)* - Mike McHargue
 #### Essays
@@ -142,7 +152,7 @@ If you are borrowing a whole system, please take care not to delete my save file
 * *The Shape of Water*
 
 ## Music
-Many of these titles were not available on streaming at the time of purchase so this might be one of the easiest ways to listen to some of these albums.
+Items marked with a * are not available on all streaming services (Spotify, Apple Music) so this might be one of the easiest ways to add some of these albums to your library.
 ### Cassette
 * *2014* - Ben Seretan
 * *Boingo Alive* - Oingo Boingo
@@ -150,28 +160,30 @@ Many of these titles were not available on streaming at the time of purchase so 
 * ***God In Three Persons*** - The Residents
 * *No More Graves* - The Sad Cobras
 * *One Wild Life* - Gungor
-* *Rare High*
+* *Rare High*\*
 * *Retired Boxer* - Daniel Johnston
 * *Serengeti* - Dennehy
-* ***Thru El Years*** - Marshmallow Coast
+* ***Thru El Years*** - Marshmallow Coast\*
 ### CD
+* ***1999*** - Prince
 * ***Absent Lovers*** - King Crimson
 * ***Aerial*** - Kate Bush
 * ***All Things Must Pass*** - George Harrison
 * ***Arthur (Or The Decline and Fall of the British Empire)*** - The Kinks
 * ***The Boatman's Call*** - Nick Cave & The Bad Seeds
-* ***The Crazy World Of*** - Arthur Brown
-* ***Commerical Album*** - The Residents
+* ***The Crazy World Of Arthur Brown*** - Arthur Brown
+* ***Commerical Album*** - The Residents\*
 * ***Discipline*** - King Crimson
-* ***El Jardin De Los Presentes*** - Invisible
+* ***El Jardin De Los Presentes*** - Invisible\*
+* *GodWeenSatan Live* - Ween
 * ***In the Court of the Crimson King*** - King Crimson
 * ***The Kinks are The Village Green Preservation Society*** - The Kinks
 * ***Let It Be*** - The Beatles
-* ***Live at The Star-Club Hamburg*** - Jerry Lee Lewis
+* ***Live at The Star-Club Hamburg*** - Jerry Lee Lewis\* (the version on streaming is incomplete)
 * *Niandra Lades and Usually Just A T-Shirt* - John Frusciante
 * ***The Modern Dance*** - Pere Ubu
 * ***Mother of All Saints*** - Thinking Fellers Union Local 282
-* ***Of The Heart, Of The Soul, And Of The Cross: The Utopian Experience*** - P.M. Dawn
+* ***Of The Heart, Of The Soul, And Of The Cross: The Utopian Experience*** - P.M. Dawn\*
 * ***Pink Flag*** - Wire
 * ***Red*** - King Crimson
 * ***Safe as Milk*** - Captain Beefheart & His Magic Band
@@ -180,10 +192,21 @@ Many of these titles were not available on streaming at the time of purchase so 
 * *The Spotlight Kid* - Captain Beefheart
 * *Sunflower* and *Surf's Up* - The Beach Boys
 * ***Trout Mask Replica*** - Captain Beefheart
-* *Unbehagen* - Nina Hagen
-* *Unicorn* - Tyrannosaurus Rex
+* *Unbehagen* - Nina Hagen\*
+* *Unicorn* - Tyrannosaurus Rex\*
 * ***Vivadixiesubmarinetransmissionplot*** - Sparklehorse
-* ***Zaireeka*** - The Flaming Lips
+* ***Zaireeka*** - The Flaming Lips\*
 ### DVD (concert)
 * *Oingo Boingo: Farewell*
 * ***The Trachtenburg Family Slideshow Players***
+### Vinyl
+* *Cloud Nine* - George Harrison
+* *Holland* - The Beach Boys
+* ***It's A Beautiful Day*** - It's A Beautiful Day\*
+* ***Marrying Maiden*** - It's A Beautiful Day\*
+* *M.I.U Album* - The Beach Boys
+* ***Music Has The Right To Children*** - Boards of Canada
+* ***Nuggets: Original Artyfacts from the First Psychedelic Era, 1965–1968***\*
+* ***To Our Children's Children's Children*** - The Moody Blues
+* ***Procol Harum*** - Procol Harum
+* ***The Wild, The innocent, & THe E Street Shuffle*** - Bruce Springsteen
