@@ -15,6 +15,8 @@ It’s been a little while since I watched Andrei Tarkovsky’s *Solaris*, the S
 
 What could a semi-obscure Soviet film from 1973 have to tell us about AI? Let me explain. Be aware that there are spoilers ahead for the movie and if you haven’t seen it yet, it’s a masterpiece and well-worth a watch.
 
+Also, a quick disclaimer: I am not an AI or machine learning engineer. This article is based on my current understanding of LLMs, which undoubtedly contain gaps and inaccuracies. That said, I am trying to instill in the reader an approximate conceptual framework for understanding LLMs rather than an exact description of how they function. We can then use this conceptual framework to try to probe the boundaries of what is possible using LLM-based AI.
+
 ### LLMs and Solaris
 
 The events of *Solaris* take place on a space station in orbit over the mysterious, eponymous planet Solaris, a planet covered by an enormous ocean. Kelvin, the story’s main character, arrives on the space station for a tour of duty and finds it almost abandoned. As he investigates this concerning state of affairs, he finds that the space station is haunted by incomprehensible creatures, sometimes taking the form of dwarfs, who run through a room and then disappear. These creatures appear to have little intelligence or agency.
