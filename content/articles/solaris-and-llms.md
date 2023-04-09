@@ -15,7 +15,7 @@ It’s been a little while since I watched Andrei Tarkovsky’s *Solaris*, the S
 
 What could a semi-obscure Soviet film from 1973 have to tell us about AI? Let me explain. Be aware that there are spoilers ahead for the movie and if you haven’t seen it yet, it’s a masterpiece and well-worth a watch.
 
-Also, a quick disclaimer: I am not an AI or machine learning engineer. This article is based on my current understanding of LLMs, which undoubtedly contain gaps and inaccuracies. That said, I am trying to instill in the reader an approximate conceptual framework for understanding LLMs rather than an exact description of how they function. We can then use this conceptual framework to try to probe the boundaries of what is possible using LLM-based AI.
+Also, a quick disclaimer: I am not an AI or machine learning engineer. This article is based on my current understanding of LLMs, which undoubtedly contains gaps and inaccuracies. That said, I am trying to instill in the reader an approximate conceptual framework for understanding LLMs rather than an exact description of how they function. We can then use this conceptual framework to try to probe the boundaries of what is possible using LLM-based AI.
 
 ### LLMs and Solaris
 
@@ -43,7 +43,7 @@ As humans, we can learn abstract concepts like math, but we can also tie those c
 
 Without a way to experience the world or to learn concrete rules, an LLM won’t be able to say, invent a new concept, without breaking a concrete rule. Think about it—if you were to use your alien dictionary to construct a sentence without some experiential understanding of what the words meant, you’d very quickly say something wrong. An LLM trying to push boundaries might say “I walked on the water on the way to work”, trying to use “water” in a novel way. This is how hallucinations emerge.
 
-Now, we know that this sentence is nonsense because you can’t walk on water—you’ve probably tried it before! But the only way an LLM can really know that it’s nonsense is if it has been given feedback that this is an incorrect usage of the word. This is how training can help to narrow the range of plausible word usages until eventually, the only usages that remain are those that approache reality. If we train the LLM not to use “water” in this novel way, we’re that much closer to it saying something else more plausible.
+Now, we know that this sentence is nonsense because you can’t walk on water—you’ve probably tried it before! But the only way an LLM can really know that it’s nonsense is if it has been given feedback that this is an incorrect usage of the word. This is how training can help to narrow the range of plausible word usages until eventually, the only usages that remain are those that approach reality. If we train the LLM not to use “water” in this novel way, we’re that much closer to it saying something else more plausible.
 
 ### LLMs Are Fundamentally Bullshitters
 This leads us to my main point: LLMs, as they currently stand, are fundamentally bullshitters. No matter how many parameters we scale them up to, no matter how much data they are trained on, no matter how fine-tuned they are on real conversations, they will never be able to go beyond bullshitting until they have a way to connect the words they learn to something fundamental.
@@ -72,5 +72,5 @@ His father, who died many years ago, is in the kitchen making food. It’s cloud
 
 As the camera zooms out, we see that all of this has taken place on an island in the ocean of Solaris. Solaris has created an imperfect copy of the world Kelvin wishes still existed, and Kelvin has decided to live in its mirage. Will we?
 
-If you'd like to watch the ending of Solaris, watch this video.
+If you'd like to watch the ending of Solaris, see this video.
 {{< youtube voc5Ofbglto >}}
