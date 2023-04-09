@@ -1,5 +1,5 @@
 ---
-title: "Good AI Is Bad for the Web"
+title: "Good AI Is Bad for Itself—and the Web"
 date: 2023-04-09T00:48:11-05:00
 ---
 
