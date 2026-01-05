@@ -1,0 +1,101 @@
+media:
+  - name: images
+    label: Images
+    input: static/images
+    output: /images
+    categories: [image]
+
+settings:
+  content:
+    merge: true
+
+components:
+  post_meta:
+    label: Post Settings
+    type: object
+    description: "Metadata and display settings from the PaperMod theme."
+    fields:
+      - { name: showToc, label: Show Table of Contents, type: boolean, default: false }
+      - { name: TocOpen, label: Open Table of Contents by Default, type: boolean, default: false }
+      - { name: hidemeta, label: Hide Meta, type: boolean, default: false }
+      - { name: comments, label: Enable Comments, type: boolean, default: true }
+      - { name: disableShare, label: Disable Share Buttons, type: boolean, default: false }
+      - { name: hideSummary, label: Hide Summary on List Page, type: boolean, default: false }
+      - { name: searchHidden, label: Hide from Search, type: boolean, default: false }
+      - { name: ShowReadingTime, label: Show Reading Time, type: boolean, default: true }
+      - { name: ShowBreadCrumbs, label: Show Breadcrumbs, type: boolean, default: true }
+      - { name: ShowPostNavLinks, label: Show Post Navigation Links, type: boolean, default: true }
+      - { name: ShowWordCount, label: Show Word Count, type: boolean, default: true }
+
+  cover:
+    label: Cover Image
+    type: object
+    fields:
+      - { name: image, label: Image URL, type: image }
+      - { name: alt, label: Alt Text, type: string }
+      - { name: caption, label: Caption, type: text }
+      - { name: relative, label: Relative to Page Bundle, type: boolean, default: false }
+      - { name: hidden, label: Hide on Single Page, type: boolean, default: false }
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: content/posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: date, label: Date, type: date, required: true }
+      - { name: draft, label: Draft, type: boolean, default: true }
+      - { name: author, label: Author, type: string, default: "Benjamin Levinson" }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: description, label: Description, type: text }
+      - { name: canonicalURL, label: Canonical URL, type: string }
+      - { name: cover, component: cover }
+      - { name: post_meta, component: post_meta }
+      - { name: body, label: Body, type: rich-text, required: true }
+
+  - name: articles
+    label: Articles
+    type: collection
+    path: content/articles
+    filename: "{primary}.md"
+    view:
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: date, label: Date, type: date, required: true }
+      - { name: draft, label: Draft, type: boolean, default: true }
+      - { name: author, label: Author, type: string, default: "Benjamin Levinson" }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: description, label: Description, type: text }
+      - { name: canonicalURL, label: Canonical URL, type: string }
+      - { name: cover, component: cover }
+      - { name: post_meta, component: post_meta }
+      - { name: body, label: Body, type: rich-text, required: true }
+
+  - name: library
+    label: Library
+    type: file
+    path: content/library.md
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: body, label: Body, type: rich-text, required: true }
+
+  - name: projects
+    label: Projects
+    type: file
+    path: content/projects.md
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: body, label: Body, type: rich-text, required: true }
