@@ -156,3 +156,7 @@ mainSections = ["posts", "essays"]
 
 [markup.highlight]
 noClasses = false
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
