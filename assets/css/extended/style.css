@@ -1,8 +1,63 @@
-.subscription-form input {
-    padding: 4px 10px;
-    width: 100%;
-    color: var(--primary);
-    font-weight: bold;
-    border: 2px solid var(--tertiary);
+.subscription-form {
+    background: var(--entry);
+    padding: 24px;
     border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin: 40px 0;
+}
+
+.subscription-form form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.subscription-form .subscribe-input {
+    flex: 1;
+    min-width: 220px;
+}
+
+.subscription-form .subscribe-input p {
+    margin: 0;
+}
+
+.subscription-form input[type="email"] {
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--primary);
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 48px;
+}
+
+.subscription-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--secondary);
+}
+
+.subscription-form input[type="submit"] {
+    background: var(--primary);
+    color: var(--theme);
+    border: none;
+    padding: 0 24px;
+    border-radius: var(--radius);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    height: 48px;
+    transition: opacity 0.3s;
+}
+
+.subscription-form input[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+.subscription-form .subscribe-message {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--secondary);
+    line-height: 1.6;
 }
