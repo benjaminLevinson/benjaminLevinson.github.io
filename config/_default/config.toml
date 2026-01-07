@@ -1,5 +1,5 @@
 baseURL = "https://blev.dev/"
-title = "Benjamin's Bio"
+title = "Little Epiphanies"
 theme = "PaperMod"
 enableRobotsTXT = true
 buildDrafts = false
@@ -23,8 +23,8 @@ home = ['HTML', 'RSS', 'JSON']
 
 [params]
 env = "production"
-title = "Benjamin's Bio"
-description = "Articles about my relationship with tech and a portal to access my slowcial media"
+title = "Little Epiphanies"
+description = "I'm here to share all of the little epiphanies that shape who I am"
 keywords = [ "Blog", "Portfolio", "PaperMod" ]
 author = "Benjamin Levinson"
 images = [ "images/headshot.png" ]
@@ -62,12 +62,12 @@ mainSections = ["posts", "essays"]
 
   [params.profileMode]
   enabled = true
-  title = "Benjamin Levinson (blev)"
-  subtitle = "Articles about my relationship with tech and a portal to access my slowcial media"
+  title = "Benjamin Levinson is a process"
+  subtitle = "I'm here to share all of the little epiphanies that shape who I am"
   imageUrl = "images/headshot.png"
   imageWidth = 300
   imageHeight = 300
-  imageTitle = "Me in Millennium Park"
+  imageTitle = "Me on top of Giotto's Bell Tower in Florence, Italy"
 
     [[params.profileMode.buttons]]
     name = "Articles"
