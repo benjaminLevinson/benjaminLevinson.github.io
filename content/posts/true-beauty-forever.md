@@ -12,7 +12,6 @@ description: "of Montreal was killer - 9/11/22 - The Mohawk"
 canonicalURL: "https://blev.dev/posts/true-beauty-forever/"
 disableHLJS: true # to disable highlightjs
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true

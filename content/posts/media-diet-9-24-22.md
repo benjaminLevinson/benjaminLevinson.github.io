@@ -12,7 +12,6 @@ description: "A short review of the media I’ve consumed this week (week of 9/2
 canonicalURL: "https://blev.dev/posts/media-diet-9-24-22"
 disableHLJS: true # to disable highlightjs
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true

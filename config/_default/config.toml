@@ -1,6 +1,5 @@
 baseURL = "https://blev.dev/"
 title = "Benjamin's Bio"
-paginate = 5
 theme = "PaperMod"
 enableRobotsTXT = true
 buildDrafts = false
@@ -156,6 +155,11 @@ mainSections = ["posts", "essays"]
 
 [markup.highlight]
 noClasses = false
+
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = 'page'
 
 [caches]
   [caches.images]

@@ -31,12 +31,12 @@ I really think I was on to something with the "tron" mode- give it a try, it's e
 
 ## Twitter bots
 ### @WikiControversy
-{{< tweet user="WikiControversy" id="1295828033463607298">}}
+{{< x user="WikiControversy" id="1295828033463607298">}}
 I've always liked reading Wikipedia Controversy sections— they're always straight to the point. This bot surfaces random Wikipedia controversy sectiions and tweets a summary of them. Admittedly, many of the controversies it surfaces are pretty horrible; I didn't intend for the bot's content to be inflammatory but here we are.  
 [(@WikiControversy)](https://twitter.com/WikiControversy) • [(Github)](https://github.com/benjaminLevinson/wiki-controversy)
 
 ### @obituary_bot
-{{< tweet user="obituary_bot" id="1570246051248111616">}}
+{{< x user="obituary_bot" id="1570246051248111616">}}
 The idea behind this one was like, when someone dies, after a certain period of time there won't be anyone left to remember them, so this bot can at least give us a reminder of those long gone.  
 [(@obituary_bot)](https://twitter.com/obituary_bot) • [(Github)](https://github.com/benjaminLevinson/wemissyou)
 
