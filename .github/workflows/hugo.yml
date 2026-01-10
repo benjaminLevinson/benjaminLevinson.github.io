@@ -94,6 +94,43 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      - name: Check for new published post and notify Buttondown
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: |
+          # 1. Get the list of added or modified markdown files
+          # We look at the differences between the current commit and the previous one
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep "content/posts/.*\.md" || true)
+
+          for FILE in $CHANGED_FILES; do
+            if [ -f "$FILE" ]; then
+              # 2. Check if the post is a draft
+              # This looks for 'draft: true' in the Hugo frontmatter
+              IS_DRAFT=$(grep -E "^draft: true" "$FILE" || true)
+
+              if [ -z "$IS_DRAFT" ]; then
+                echo "Processing published post: $FILE"
+
+                # 3. Extract Title (removes 'title: ' and quotes)
+                TITLE=$(grep -m 1 "^title: " "$FILE" | sed 's/title: //;s/"//g;s/\"//g')
+
+                # 4. Extract Content (removes the YAML frontmatter block)
+                # This takes everything after the second '---'
+                BODY=$(awk 'BEGIN {count=0} /^---$/ {count++; next} count>=2 {print}' "$FILE")
+
+                # 5. Send to Buttondown as a Draft
+                # We send it as a draft so you can do a final check in Buttondown
+                curl -X POST "https://api.buttondown.com/v1/emails" \
+                  -H "Authorization: Token $BUTTONDOWN_API_KEY" \
+                  -H "Content-Type: application/json" \
+                  -d "$(jq -n --arg b "$BODY" --arg t "$TITLE" '{body: $b, subject: $t, status: "draft"}')"
+
+                echo "Sent $TITLE to Buttondown drafts."
+              else
+                echo "Skipping $FILE (Draft status detected)."
+              fi
+            fi
+          done
   deploy:
     environment:
       name: github-pages
