@@ -1,7 +1,7 @@
 ---
 title: What if you gave everyone an intern?
 date: 2026-07-09
-draft: true
+draft: false
 author: Benjamin Levinson
 cover:
   relative: false
