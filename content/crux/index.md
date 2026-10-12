@@ -2,7 +2,7 @@
 title: "Crux Central calendar"
 layout: "single"
 type: "crux"
-draft: true
+draft: false
 ShowReadingTime: false
 ShowShareButtons: false
 ---

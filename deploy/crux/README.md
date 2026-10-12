@@ -1,4 +1,4 @@
-# Crux Central hybrid feed — prepared, not enabled
+# Crux Central hybrid feed
 
 The collector uses normal headed Chrome under Xvfb. It observes only page-initiated public calendar responses; it never reads/reuses API keys, cookies, or browser storage, never solves a challenge, and never uses FlareSolverr, stealth, or proxies. Chrome's sandbox stays enabled. Unknown schema, CAPTCHA, failed HTTP requests, incomplete pagination, unexpectedly empty results, and large unexplained removals preserve the previous ICS and update freshness status.
 
@@ -34,7 +34,7 @@ User handoff: open GitHub Settings → Developer settings → Personal access to
 
 Keep the token in a private mode-0600 file mounted read-only only into the publisher. The collector container must never receive it. No token values go into git, environment logs, scripts, image layers, wiki, or chat. Do not extract/copy an existing broader credential. The publisher uses a fixed repository, branch and file; it validates the bundle, rejects state regression, and supplies the current blob SHA for conflict protection. It cannot create branches and assumes the initial data branch/file has been deliberately seeded.
 
-## Activation sequence after approval
+## Deployment and update procedure
 
 1. The approved `seccomp-chroot.proposed.json` passed isolated container verification. Set CRUX_SECCOMP_FILE to its installed private host path, verify the hash below, and retain every tested protection. Do not apply any further security exception without approval.
 2. Build reviewed images pinned by digest/content hash. Integrate `compose.proposed.yml` into the existing authoritative stack, with private local paths. No ports, proxy routes, host networking, Docker socket, home-directory mount, or public inbound access are needed.
@@ -62,4 +62,4 @@ hugo --buildDrafts
 
 Original profile SHA-256: `cc3e61cabda6bbc1e53e54d27ba4d55a9d3be829b6dd1a596f4a7b31b1cc7849` (namespace-only test failed at chroot).
 
-Approved and successfully tested profile SHA-256: `0d5adedfcce51f0a6ddaf0f27ed9084f606efcd7e5bd459554ed6c1d6d69ba0f` (`seccomp-chroot.proposed.json`). Current collector image built from application code at `5f0bc4d`: `sha256:46854e33e6ef415c869aa410a0ee6acbc9ac0683e35eec5972803d58f6f425ef`. Production activation and user token handoff remain incomplete.
+Approved and successfully tested profile SHA-256: `0d5adedfcce51f0a6ddaf0f27ed9084f606efcd7e5bd459554ed6c1d6d69ba0f` (`seccomp-chroot.proposed.json`). Current collector image built from application code at `5f0bc4d`: `sha256:46854e33e6ef415c869aa410a0ee6acbc9ac0683e35eec5972803d58f6f425ef`. The user completed the private token handoff. Only file metadata was inspected: UID 1000, mode 0600 in a mode-0700 directory. The intended publisher service successfully authenticated and committed a subsequent genuine collection to the public data branch. Collector and publisher are running in the existing authoritative stack; this change activates the full-site publication workflow and landing page. No token value was read by the assistant. The 90-day credential must be renewed by the user before expiry; otherwise publication stops and the last public feed becomes stale.
