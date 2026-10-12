@@ -1,219 +1,233 @@
-"""One-shot public source feasibility probe. No accounts, bookings or deployment.
+"""Manual, nondeploying public schedule probe using normal headed Chrome.
 
-Uses stock Playwright Chromium: no cookies, stealth, browser spoofing, proxies,
-challenge solving, guessed API requests, or response replay. Captures only normal
-page-initiated public responses and redacts response values by allowlist.
+No spoofing, stealth, challenge handling, account sign-in, request replay, or
+credential capture. The page makes its own requests. Only public calendar fields
+are retained; request headers, cookies, storage and API keys are never read.
 """
 import asyncio
 import json
 import os
 import re
+import shutil
+import subprocess
+import sys
 from pathlib import Path
-from urllib.parse import parse_qsl, urlsplit
-
+from urllib.parse import parse_qs, urlsplit
 from playwright.async_api import async_playwright
 
-URL = 'https://crux.portal.approach.app/schedule/embed?categoryIds=4&locationIds=2'
+URL = 'https://www.cruxclimbingcenter.com/central-austin/calendar/'
 OUT = Path('probe-output')
-SAFE_VALUES = {
-    'id', 'eventId', 'bookingId', 'locationId', 'categoryId', 'categoryIds',
-    'event_id', 'booking_id', 'location_id', 'category_id', 'name', 'title',
-    'start', 'end', 'startDate', 'endDate', 'startTime', 'endTime',
-    'start_date', 'end_date', 'startsAt', 'endsAt', 'date', 'duration',
-    'timezone', 'timeZone', 'time_zone', 'utcOffset', 'offset',
-    'total', 'totalCount', 'count', 'page', 'pageSize', 'limit', 'skip',
-    'hasMore', 'hasNextPage', 'isLast', 'isCancelled', 'isCanceled', 'status',
-}
-SENSITIVE = re.compile(r'token|secret|password|cookie|authorization|session|cart|customer|attendee|email|phone|payment|user', re.I)
-RELEVANT = re.compile(r'schedule|booking|event|location|categor', re.I)
-report = {'url': URL, 'result': 'not_started', 'requests': [], 'public_json': [],
-          'snapshots': [], 'denials': [], 'completeness': 'unverified'}
+SELECTED = {1: 'Yoga Classes', 2: 'Fitness Classes', 4: 'Events',
+            5: 'All Climbing Lessons', 8: 'Top Rope Lesson',
+            9: 'Rock Climbing Basics', 10: 'Lead Climbing Lesson',
+            11: 'Bouldering Basics', 16: 'Intro to Kilter Board'}
+report = {'url': URL, 'result': 'not_started', 'requests': [], 'snapshots': [],
+          'cal_pages': [], 'categories': [], 'locations': [],
+          'selected_categories': SELECTED, 'completeness': 'unverified'}
 pending = set()
+raw_pages = []
+failures = []
 
 
-def public_url(url):
-    """Drop query values (which may be opaque) and fragment from diagnostics."""
-    p = urlsplit(url)
-    return {'url': f'{p.scheme}://{p.netloc}{p.path}',
-            'query_keys': sorted({k for k, _ in parse_qsl(p.query) if not SENSITIVE.search(k)})}
+def location(x):
+    return {k: x[k] for k in ('id', 'name', 'timeZone') if k in x}
 
 
-def sanitize(value, key='', depth=0):
-    if depth > 12 or SENSITIVE.search(key):
-        return None
-    if isinstance(value, dict):
-        result = {}
-        for k, v in value.items():
-            if SENSITIVE.search(k):
-                continue
-            cleaned = sanitize(v, k, depth + 1)
-            if cleaned is not None:
-                result[k] = cleaned
-        return result or None
-    if isinstance(value, list):
-        # Prevent oversized artifacts. Array lengths separately disclose truncation.
-        return {'array_length': len(value), 'sample': [x for v in value[:100]
-                if (x := sanitize(v, key, depth + 1)) is not None]}
-    if key not in SAFE_VALUES:
-        return None
-    if isinstance(value, str):
-        if key.endswith('Id') or key in {'id', 'event_id', 'booking_id', 'location_id', 'category_id'}:
-            return value if re.fullmatch(r'[0-9-]{1,36}', value) else '[non-numeric id omitted]'
-        return value[:250]
-    return value if isinstance(value, (int, float, bool)) else None
+def booking(x):
+    keys = ('id', 'eventId', 'locationId', 'name', 'status', 'startDT', 'endDT',
+            'timeZone', 'isCancelled', 'isCanceled', 'isActive', 'isPublic',
+            'isSoldOut', 'soldOut', 'capacity', 'remaining', 'available')
+    b = {k: x[k] for k in keys if k in x and isinstance(x[k], (str, int, float, bool, type(None)))}
+    b['event'] = {k: x.get('event', {})[k] for k in
+                  ('id', 'name', 'timeZone', 'locationId', 'isPublic', 'status')
+                  if k in x.get('event', {})}
+    b['location'] = location(x.get('location', {}))
+    return b
 
 
-async def observe(response):
-    p = urlsplit(response.url)
-    if not (p.hostname or '').endswith('.approach.app'):
+async def observe(r):
+    u = urlsplit(r.url)
+    kind = r.request.resource_type
+    if u.hostname == 'crux.portal.approach.app' and kind in {'document', 'script'}:
+        report['requests'].append({'path': u.path, 'kind': kind, 'status': r.status})
+        if kind == 'script' and r.status >= 400:
+            failures.append('script_http_error')
+    if u.hostname != 'widgets.api.prod.tilefive.com' or u.path not in {
+        '/cal', '/categories', '/locations', '/locations/2'}:
         return
-    kind = response.request.resource_type
-    entry = {**public_url(response.url), 'status': response.status, 'kind': kind}
-    if len(report['requests']) < 150:
-        report['requests'].append(entry)
-    if response.status in (401, 403) and kind in {'document', 'script', 'xhr', 'fetch'}:
-        report['denials'].append(entry)
-        return
-    if not RELEVANT.search(p.path) or SENSITIVE.search(p.path):
-        return
-    if 'json' not in response.headers.get('content-type', ''):
+    if r.status != 200 or 'json' not in r.headers.get('content-type', ''):
+        failures.append('calendar_api_http_or_type_error')
         return
     try:
-        data = await response.json()
-        report['public_json'].append({**entry,
-            'top_level_keys': list(data)[:80] if isinstance(data, dict) else ['array'],
-            'data': sanitize(data)})
+        data = await r.json()
+        if u.path in {'/locations', '/locations/2'}:
+            for x in data if isinstance(data, list) else [data]:
+                if x['id'] == 2:
+                    report['locations'].append(location(x))
+        elif u.path == '/categories':
+            report['categories'] = [location(x) for x in data['data']]
+            report['category_pagination'] = data.get('pagination')
+        else:
+            query = {k: v for k, v in parse_qs(u.query).items()
+                     if k in {'startDT', 'endDT', 'locationId', 'categoryId', 'page', 'pageSize'}}
+            # Store the ordinary response's pagination object: no headers or keys.
+            entry = {'query': query, 'pagination': data.get('pagination'),
+                     'cal_event_count': len(data['calEvents']),
+                     'booking_count': len(data['bookings']),
+                     'booking_field_names': sorted(data['bookings'][0]) if data['bookings'] else [],
+                     'bookings': [booking(x) for x in data['bookings']]}
+            report['cal_pages'].append(entry)
+            raw_pages.append(entry)
     except Exception:
-        report['public_json'].append({**entry, 'parse': 'failed'})
+        failures.append('public_response_schema_error')
 
 
-def observe_task(response):
-    task = asyncio.create_task(observe(response))
-    pending.add(task)
-    task.add_done_callback(pending.discard)
+def observe_task(r):
+    t = asyncio.create_task(observe(r))
+    pending.add(t)
+    t.add_done_callback(pending.discard)
 
 
-async def checkpoint(page, label):
-    await page.wait_for_timeout(1000)
+async def settle(page):
+    await page.wait_for_timeout(1500)
     if pending:
         await asyncio.gather(*list(pending), return_exceptions=True)
-    text = await page.locator('body').inner_text()
-    challenged = bool(re.search(r'verify you are human|access denied|just a moment|checking your browser|complete the captcha', text, re.I))
-    report['snapshots'].append({'label': label, **public_url(page.url),
-        'title': await page.title(), 'public_text': text[:35000],
-        'text_truncated': len(text) > 35000,
-        'row_count': await page.get_by_role('row').count(),
-        'buttons': (await page.get_by_role('button').all_text_contents())[:100]})
-    if report['denials'] or challenged:
-        report['result'] = 'access_denied_or_challenged'
+
+
+async def snapshot(frame, label):
+    text = await frame.locator('body').inner_text(timeout=10000)
+    report['snapshots'].append({'label': label, 'public_text': text[:35000],
+                              'row_count': await frame.get_by_role('row').count(),
+                              'buttons': (await frame.get_by_role('button').all_text_contents())[:80]})
+    if re.search(r'verify you are human|access denied|just a moment|complete the captcha', text, re.I):
+        raise RuntimeError('interactive_access_challenge')
+
+
+def matching_pages():
+    expected = set(SELECTED)
+    matches = []
+    for p in raw_pages:
+        cats = {int(n) for value in p['query'].get('categoryId', []) for n in value.split(',') if n.isdigit()}
+        if cats == expected and p['query'].get('locationId') == ['2']:
+            matches.append(p)
+    return matches
+
+
+def complete(pages):
+    if not pages:
         return False
+    # Evidence is retained even if upstream uses a different terminal schema.
+    latest = {int(p['query'].get('page', ['0'])[0]): p for p in pages}
+    if sorted(latest) != list(range(1, max(latest)+1)):
+        return False
+    last = latest[max(latest)]
+    pg = last['pagination'] or {}
+    terminal = (pg.get('hasNextPage') is False or pg.get('hasMore') is False
+                or pg.get('isLast') is True
+                or isinstance(pg.get('totalPages'), int) and max(latest) >= pg['totalPages'])
+    # Do not equate DOM stalling or a short page with proven completeness.
+    if not terminal:
+        return False
+    ids = [b['id'] for p in latest.values() for b in p['bookings']]
+    if len(ids) != len(set(ids)):
+        raise RuntimeError('duplicate_occurrence_pages')
     return True
 
 
 async def run():
+    chrome = shutil.which('google-chrome') or shutil.which('google-chrome-stable')
+    if not chrome:
+        raise RuntimeError('installed_chrome_missing')
     async with async_playwright() as pw:
-        browser = await pw.chromium.launch()
+        browser = await pw.chromium.launch(headless=False, executable_path=chrome)
+        report['browser_version'] = browser.version
+        report['browser_mode'] = 'headed_xvfb_fresh_context'
         context = await browser.new_context()
         page = await context.new_page()
-        page.set_default_timeout(15000)
+        page.set_default_timeout(20000)
         page.on('response', observe_task)
-        response = await page.goto(URL, wait_until='domcontentloaded', timeout=45000)
-        report['document_status'] = response.status if response else None
-        if not await checkpoint(page, 'initial'):
-            await browser.close()
-            return
-
-        # Location selection is a public view preference, not a booking.
-        chooser = page.get_by_role('button', name=re.compile(r'^Crux Climbing Center - Central 6015'))
-        if await chooser.count():
-            await chooser.click()
-            await page.get_by_role('button', name='SAVE', exact=True).click()
         try:
-            await page.get_by_role('button', name='Events', exact=True).wait_for(timeout=20000)
-        except Exception:
-            await checkpoint(page, 'schedule_not_ready')
-            report['result'] = report['result'] if report['denials'] else 'schedule_not_ready'
+            r = await page.goto(URL, wait_until='domcontentloaded', timeout=45000)
+            report['parent_document_status'] = r.status
+            await page.locator('iframe[src*="crux.portal.approach.app"]').wait_for()
+            iframe = page.frame_locator('iframe[src*="crux.portal.approach.app"]')
+            frame = next((f for f in page.frames() if 'crux.portal.approach.app' in f.url), None)
+            if frame is None:
+                raise RuntimeError('schedule_frame_missing')
+            await settle(page)
+            chooser = iframe.get_by_role('button', name=re.compile(r'^Crux Climbing Center - Central'))
+            await chooser.wait_for(timeout=45000)
+            await chooser.click()
+            await iframe.get_by_role('button', name='Save', exact=True).click()
+            try:
+                await iframe.get_by_role('button', name='Events', exact=True).wait_for(timeout=60000)
+            except Exception:
+                await snapshot(frame, 'schedule_not_ready')
+                raise
+            await settle(page)
+            await snapshot(frame, 'events_loaded')
+            await iframe.get_by_role('button', name='Events', exact=True).click()
+            await snapshot(frame, 'category_menu')
+            await iframe.get_by_role('button', name='Clear', exact=True).click()
+            for name in SELECTED.values():
+                await iframe.get_by_role('menuitem', name=re.compile('^'+re.escape(name)+r'\s*$')).click()
+            await iframe.get_by_role('button', name='Save', exact=True).click()
+            await settle(page)
+            await snapshot(frame, 'selected_categories')
+            report['selected_frame_url'] = frame.url
+            if failures:
+                raise RuntimeError('source_response_failure')
+            for index in range(80):
+                if complete(matching_pages()):
+                    break
+                rows = frame.get_by_role('row')
+                if await rows.count():
+                    await rows.last.scroll_into_view_if_needed()
+                await frame.evaluate('window.scrollTo(0, document.body.scrollHeight)')
+                # Parent page can own the scroll for an auto-sized embedded app.
+                await page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
+                await settle(page)
+                if failures:
+                    raise RuntimeError('source_response_failure')
+                if index >= 4 and len(matching_pages()) == 1:
+                    break
+            await snapshot(frame, 'after_pagination')
+            pages = matching_pages()
+            report['completeness'] = 'verified' if complete(pages) else 'unverified'
+            report['selected_page_count'] = len(pages)
+            report['source_timezone_verified'] = any(x.get('timeZone') == 'America/Chicago' for x in report['locations'])
+            report['result'] = 'complete_public_snapshot' if report['completeness'] == 'verified' else 'public_schedule_rendered_completion_unverified'
+        finally:
+            await settle(page)
+            report['failures'] = failures
             await browser.close()
-            return
-        if not await checkpoint(page, 'events_loaded'):
-            await browser.close()
-            return
-
-        await page.get_by_role('button', name='Events', exact=True).click()
-        report['category_menu'] = await page.get_by_role('menu').inner_text()
-        await page.get_by_role('button', name='Clear', exact=True).click()
-        # Adult/public scope; all category identities remain subject to inspection.
-        names = ['Yoga Classes', 'Fitness Classes', 'Events', 'All Climbing Lessons',
-                 'Bouldering Basics', 'Intro to Kilter Board']
-        report['selected_categories'] = []
-        for name in names:
-            item = page.get_by_role('menuitem', name=name, exact=True)
-            if await item.count():
-                await item.click()
-                report['selected_categories'].append(name)
-        await page.get_by_role('button', name='Save', exact=True).click()
-        if not await checkpoint(page, 'adult_public_scope'):
-            await browser.close()
-            return
-
-        # Normal scrolling can reveal pagination requests; stalling alone does not
-        # establish completeness. Preserve that distinction in the report.
-        seen = set()
-        stable = 0
-        for round_number in range(20):
-            rows = await page.get_by_role('row').all_text_contents()
-            old_count = len(seen)
-            seen.update(rows)
-            stable = stable + 1 if len(seen) == old_count else 0
-            report['scroll_rounds'] = round_number + 1
-            report['unique_rendered_rows'] = len(seen)
-            if stable >= 3 or report['denials']:
-                break
-            await page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
-            await page.wait_for_timeout(1200)
-        report['rendered_rows'] = sorted(seen)[:1000]
-        report['scroll_stalled'] = stable >= 3
-        if not await checkpoint(page, 'after_scroll'):
-            await browser.close()
-            return
-        # Read-only More Info gives an actual booking URL and any timezone label.
-        info = page.get_by_role('button', name='More Info', exact=True)
-        if await info.count():
-            await info.first.click()
-            await checkpoint(page, 'sample_occurrence')
-            p = urlsplit(page.url)
-            if re.fullmatch(r'/event/\d+/booking/\d+(?:/embed)?', p.path):
-                report['sample_booking_url'] = f'https://{p.netloc}{p.path}'
-        report['result'] = 'public_schedule_rendered' if not report['denials'] else 'access_denied_or_challenged'
-        await browser.close()
 
 
 async def main():
     OUT.mkdir(exist_ok=True)
     try:
         await run()
-    except Exception as error:
-        # Do not leak arbitrary request URLs, response payloads or tokens in errors.
+    except Exception as e:
         report['result'] = 'probe_error'
-        report['error_type'] = type(error).__name__
-    finally:
-        output = json.dumps(report, indent=2, ensure_ascii=False)
-        (OUT / 'public-report.json').write_text(output + '\n')
-        summary = ('## Crux public source probe\n\n'
-                   f"Result: **{report['result']}**\n\n"
-                   f"Document HTTP status: {report.get('document_status')}\n\n"
-                   f"Public JSON responses observed: {len(report['public_json'])}\n\n"
-                   f"Unique rendered rows: {report.get('unique_rendered_rows', 0)}\n\n"
-                   'Complete extraction and source timezone require inspection of the report. '
-                   'No booking, sign-in, feed publication, Pages deployment, or newsletter action.\n')
-        print(summary)
-        if os.environ.get('GITHUB_STEP_SUMMARY'):
-            with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as handle:
-                handle.write(summary)
-        print('PUBLIC_REPORT_BEGIN')
-        print(output)
-        print('PUBLIC_REPORT_END')
+        report['error_type'] = type(e).__name__
+        # Include only our own fixed identifiers, never arbitrary browser errors.
+        if type(e) is RuntimeError and re.fullmatch('[a-z_]+', str(e)):
+            report['error_code'] = str(e)
+    (OUT/'public-report.json').write_text(json.dumps(report, indent=2)+'\n')
+    summary = (f"## Crux corrected public-source probe\n\nResult: **{report['result']}**\n\n"
+               f"Browser: {report.get('browser_version')} (headed, fresh context)\n\n"
+               f"Calendar responses: {len(report['cal_pages'])}; completeness: {report['completeness']}\n\n"
+               "No booking, account sign-in, deployment, API-key capture or request replay.\n")
+    print(summary)
+    if os.environ.get('GITHUB_STEP_SUMMARY'):
+        with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+            f.write(summary)
+    return 0 if report['result'] == 'complete_public_snapshot' else 2
 
 
 if __name__ == '__main__':
-    asyncio.run(main())
+    if not os.environ.get('DISPLAY'):
+        if not shutil.which('xvfb-run'):
+            raise SystemExit('Xvfb is required; no headless fallback.')
+        raise SystemExit(subprocess.call(['xvfb-run', '-a', sys.executable, __file__]))
+    raise SystemExit(asyncio.run(main()))
