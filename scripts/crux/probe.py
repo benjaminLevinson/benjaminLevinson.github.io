@@ -50,7 +50,8 @@ async def observe(r):
     u = urlsplit(r.url)
     kind = r.request.resource_type
     if u.hostname == 'crux.portal.approach.app' and kind in {'document', 'script'}:
-        report['requests'].append({'path': u.path, 'kind': kind, 'status': r.status})
+        report['requests'].append({'path': u.path, 'kind': kind, 'status': r.status,
+                                   'response_metadata': {k:v for k,v in r.headers.items() if k in {'content-type','server','x-cache','x-amzn-waf-action'}}})
         if kind == 'script' and r.status >= 400:
             failures.append('script_http_error')
     if u.hostname != 'widgets.api.prod.tilefive.com' or u.path not in {
@@ -152,10 +153,11 @@ async def run():
             report['parent_document_status'] = r.status
             await page.locator('iframe[src*="crux.portal.approach.app"]').wait_for()
             iframe = page.frame_locator('iframe[src*="crux.portal.approach.app"]')
-            frame = next((f for f in page.frames() if 'crux.portal.approach.app' in f.url), None)
+            frame = next((f for f in page.frames if 'crux.portal.approach.app' in f.url), None)
             if frame is None:
                 raise RuntimeError('schedule_frame_missing')
             await settle(page)
+            await snapshot(frame, 'initial_frame')
             chooser = iframe.get_by_role('button', name=re.compile(r'^Crux Climbing Center - Central'))
             await chooser.wait_for(timeout=45000)
             await chooser.click()
@@ -199,7 +201,7 @@ async def run():
             report['source_timezone_verified'] = any(x.get('timeZone') == 'America/Chicago' for x in report['locations'])
             report['result'] = 'complete_public_snapshot' if report['completeness'] == 'verified' else 'public_schedule_rendered_completion_unverified'
         finally:
-            for f in page.frames():
+            for f in page.frames:
                 if 'crux.portal.approach.app' in f.url:
                     try:
                         await snapshot(f, 'final_state')
