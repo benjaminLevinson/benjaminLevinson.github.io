@@ -4,6 +4,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
 permissions:
   contents: read
   pages: write
@@ -77,6 +79,8 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+      - name: Stage validated Crux feed in the full site
+        run: python3 scripts/crux/stage.py --output static/crux
       - name: Build the site
         run: |
           hugo \
@@ -95,6 +99,7 @@ jobs:
         with:
           path: ./public
       - name: Check for new published post and notify Buttondown
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
         run: |

@@ -1,0 +1,11 @@
+const test=require('node:test');const assert=require('node:assert/strict');
+const {normalize,Pages}=require('../../scripts/crux/collector.cjs');
+const row=(id)=>({id,eventId:222,locationId:2,timeZone:'America/Chicago',name:'Class',isAllDay:0,status:'active',startDT:'2026-10-20T00:00:00Z',endDT:'2026-10-20T01:00:00Z',event:{timeZone:'America/Chicago',activities:[{id:2}]},ticketsRemaining:0,maxNumOfGuests:12});
+const url=n=>new URL('https://widgets.api.prod.tilefive.com/cal?startDT=2026-10-12T05:00:00Z&endDT=2026-11-13T05:59:59.999Z&categoryId=1,2,4,5,8,9,10,11,16&locationId=2&pageSize=50&page='+n);
+const page=(n,rows,total=51)=>({calEvents:[],bookings:rows,pagination:{page:n,pageSize:50,rowCount:total,pageCount:Math.ceil(total/50)}});
+test('sold out stays active; no attendee or credential fields copied',()=>{const b=row(1);b.apiKey='private';b.customerCount=12;const n=normalize(b);assert.equal(n.status,'active');assert.equal('apiKey' in n,false);assert.equal('customerCount' in n,false);});
+test('all pages and exact totals required',()=>{const p=new Pages();p.add(url(1),page(1,Array.from({length:50},(_,i)=>row(i+1))));assert.equal(p.complete(),false);assert.throws(()=>p.snapshot());p.add(url(2),page(2,[row(51)]));assert.equal(p.snapshot().occurrences.length,51);});
+test('duplicate occurrence across pages rejected',()=>{const p=new Pages();p.add(url(1),page(1,Array.from({length:50},(_,i)=>row(i+1))));p.add(url(2),page(2,[row(1)]));assert.throws(()=>p.snapshot());});
+test('changing total and short nonterminal page rejected',()=>{const p=new Pages();p.add(url(1),page(1,Array.from({length:50},(_,i)=>row(i+1))));assert.throws(()=>p.add(url(2),page(2,[row(51),row(52)],52)));assert.throws(()=>new Pages().add(url(1),page(1,[row(1)])));});
+test('unknown status, all-day schema, location, timezone fail closed',()=>{for(const delta of [{status:'unknown'},{isAllDay:true},{locationId:1},{timeZone:'Europe/Oslo'},{startDT:'2026-10-20T00:00:00'}])assert.throws(()=>normalize({...row(1),...delta}));});
+test('non-booking calendar rows are not silently discarded',()=>{const p=page(1,[row(1)],1);p.calEvents=[{id:2}];assert.throws(()=>new Pages().add(url(1),p));});

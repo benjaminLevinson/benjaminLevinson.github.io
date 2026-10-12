@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article class="post-single">
+<header class="post-header"><h1 class="post-title">{{ .Title }}</h1></header>
+<div class="post-content">
+{{ .Content }}
+<p><a href="webcal://blev.dev/crux/calendar.ics">Subscribe to the calendar</a> · <a href="calendar.ics">Download ICS</a> · <a href="https://www.cruxclimbingcenter.com/central-austin/calendar/">View the Crux source</a></p>
+<p id="crux-status" role="status">Checking the last successful refresh…</p>
+<noscript><p>See <a href="status.json">refresh status</a> for the last successful collection time.</p></noscript>
+<p>Times follow Austin’s America/Chicago timezone, including daylight-saving changes. Subscription apps may display events in your device’s timezone.</p>
+<p>Cancelled or removed bookings retain their calendar identifiers. Disappearances are marked cancelled only after two complete, separated source checks; verify changes with Crux.</p>
+</div>
+</article>
+<script>
+(async()=>{
+ const el=document.getElementById('crux-status');
+ try{
+  const response=await fetch('status.json',{cache:'no-store'});if(!response.ok)throw Error();
+  const status=await response.json();const success=new Date(status.lastSuccess);
+  if(!Number.isFinite(success.valueOf()))throw Error();
+  const stale=Date.now()-success.valueOf()>status.staleAfterHours*3600000;
+  const failed=status.refreshStatus==='failed';
+  const sourceDate=new Intl.DateTimeFormat(undefined,{timeZone:'America/Chicago',year:'numeric',month:'short',day:'numeric'});
+  const refreshDate=new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'});
+  el.textContent=(stale?'Out of date. ':failed?'Refresh paused; showing the last good calendar. ':'Up to date. ')+
+    'Last successful collection: '+refreshDate.format(success).replace(/\.$/,'')+'. '+status.sourceCount+' source bookings. '+
+    'Source window: '+sourceDate.format(new Date(status.coverage.start))+' through '+sourceDate.format(new Date(new Date(status.coverage.end).valueOf()-1))+'.';
+  if(stale||failed)el.style.color='var(--primary)';
+ }catch{el.textContent='Freshness could not be verified. Check the Crux source before relying on this calendar.';}
+})();
+</script>
+{{ end }}
