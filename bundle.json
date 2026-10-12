@@ -3291,19 +3291,19 @@
       "start": "2026-10-12T05:00:00.000Z",
       "end": "2026-11-13T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-12T22:40:17Z"
+    "lastSuccess": "2026-10-12T23:40:32Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-12T22:40:17Z",
-    "lastSuccess": "2026-10-12T22:40:17Z",
+    "lastAttempt": "2026-10-12T23:40:32Z",
+    "lastSuccess": "2026-10-12T23:40:32Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-12T05:00:00.000Z",
       "end": "2026-11-13T06:00:00.000Z"
     },
-    "sourceCount": 167,
+    "sourceCount": 165,
     "feedCount": 172,
     "staleAfterHours": 6
   },
