@@ -11,6 +11,7 @@ import re
 import shutil
 import subprocess
 import sys
+import traceback
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 from playwright.async_api import async_playwright
@@ -198,6 +199,12 @@ async def run():
             report['source_timezone_verified'] = any(x.get('timeZone') == 'America/Chicago' for x in report['locations'])
             report['result'] = 'complete_public_snapshot' if report['completeness'] == 'verified' else 'public_schedule_rendered_completion_unverified'
         finally:
+            for f in page.frames():
+                if 'crux.portal.approach.app' in f.url:
+                    try:
+                        await snapshot(f, 'final_state')
+                    except Exception:
+                        pass
             await settle(page)
             report['failures'] = failures
             await browser.close()
@@ -210,6 +217,7 @@ async def main():
     except Exception as e:
         report['result'] = 'probe_error'
         report['error_type'] = type(e).__name__
+        report['error_locations'] = [{'file': Path(f.filename).name, 'line': f.lineno, 'function': f.name} for f in traceback.extract_tb(e.__traceback__)]
         # Include only our own fixed identifiers, never arbitrary browser errors.
         if type(e) is RuntimeError and re.fullmatch('[a-z_]+', str(e)):
             report['error_code'] = str(e)
