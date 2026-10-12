@@ -1,0 +1,51 @@
+# Review and integrate these two services into the authoritative Compose stack.
+# No ports, Caddy route, inbound access, Docker socket, or host-home mount.
+services:
+  crux-collector:
+    image: local/crux-collector:REVIEWED_CONTENT_HASH
+    init: true
+    restart: unless-stopped
+    user: '1000:1000'
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+      # Pending explicit approval for collector only:
+      # - seccomp=${CRUX_SECCOMP_FILE}
+    shm_size: 512m
+    tmpfs:
+      - /tmp:rw,nosuid,size=1073741824,mode=1777
+      - /home/node:rw,nosuid,size=268435456,uid=1000,gid=1000
+    environment:
+      TZ: America/Chicago
+      CHROME_PATH: /usr/bin/google-chrome
+    volumes:
+      - ${CRUX_DATA_DIR:?set private state directory}:/data
+    networks: [crux-egress]
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+    healthcheck:
+      test: [CMD, python3, /app/health.py]
+      interval: 60s
+      timeout: 5s
+      retries: 3
+      start_period: 300s
+  crux-publisher:
+    image: local/crux-publisher:REVIEWED_CONTENT_HASH
+    init: true
+    restart: unless-stopped
+    user: '1000:1000'
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp:rw,nosuid,noexec,size=16777216,mode=1777]
+    volumes:
+      - ${CRUX_DATA_DIR:?set private state directory}:/data:ro
+      - ${CRUX_TOKEN_FILE:?approved credential file required}:/run/secrets/crux_github_token:ro
+    networks: [crux-egress]
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+networks:
+  crux-egress: {}
