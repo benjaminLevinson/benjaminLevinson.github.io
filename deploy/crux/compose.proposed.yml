@@ -10,7 +10,8 @@ services:
     cap_drop: [ALL]
     security_opt:
       - no-new-privileges:true
-      # Pending explicit approval for collector only:
+      # Original profile approved and tested; blocked at Chrome chroot.
+      # Additional chroot allowance still requires separate approval:
       # - seccomp=${CRUX_SECCOMP_FILE}
     shm_size: 512m
     tmpfs:
