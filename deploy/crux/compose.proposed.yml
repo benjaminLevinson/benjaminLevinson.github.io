@@ -10,9 +10,8 @@ services:
     cap_drop: [ALL]
     security_opt:
       - no-new-privileges:true
-      # Original profile approved and tested; blocked at Chrome chroot.
-      # Additional chroot allowance still requires separate approval:
-      # - seccomp=${CRUX_SECCOMP_FILE}
+      # Approved namespace + chroot profile; collector only.
+      - seccomp=${CRUX_SECCOMP_FILE:?set approved collector seccomp profile}
     shm_size: 512m
     tmpfs:
       - /tmp:rw,nosuid,size=1073741824,mode=1777
