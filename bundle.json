@@ -3291,12 +3291,12 @@
       "start": "2026-10-12T05:00:00.000Z",
       "end": "2026-11-13T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-13T03:41:30Z"
+    "lastSuccess": "2026-10-13T04:41:44Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-13T03:41:30Z",
-    "lastSuccess": "2026-10-13T03:41:30Z",
+    "lastAttempt": "2026-10-13T04:41:44Z",
+    "lastSuccess": "2026-10-13T04:41:44Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
