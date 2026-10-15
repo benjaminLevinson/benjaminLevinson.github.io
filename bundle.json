@@ -3367,12 +3367,12 @@
       "start": "2026-10-14T05:00:00.000Z",
       "end": "2026-11-15T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-15T03:53:18Z"
+    "lastSuccess": "2026-10-15T04:53:32Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-15T03:53:18Z",
-    "lastSuccess": "2026-10-15T03:53:18Z",
+    "lastAttempt": "2026-10-15T04:53:32Z",
+    "lastSuccess": "2026-10-15T04:53:32Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
