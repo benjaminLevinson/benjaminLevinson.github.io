@@ -5267,19 +5267,19 @@
       "start": "2026-10-16T05:00:00.000Z",
       "end": "2026-11-17T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-16T21:03:09Z"
+    "lastSuccess": "2026-10-16T22:03:27Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-16T21:03:09Z",
-    "lastSuccess": "2026-10-16T21:03:09Z",
+    "lastAttempt": "2026-10-16T22:03:27Z",
+    "lastSuccess": "2026-10-16T22:03:27Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-16T05:00:00.000Z",
       "end": "2026-11-17T06:00:00.000Z"
     },
-    "sourceCount": 233,
+    "sourceCount": 232,
     "feedCount": 276,
     "staleAfterHours": 6
   },
