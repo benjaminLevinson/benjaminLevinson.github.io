@@ -3424,12 +3424,12 @@
       "start": "2026-10-16T05:00:00.000Z",
       "end": "2026-11-17T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-16T05:59:16Z"
+    "lastSuccess": "2026-10-16T06:59:30Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-16T05:59:16Z",
-    "lastSuccess": "2026-10-16T05:59:16Z",
+    "lastAttempt": "2026-10-16T06:59:30Z",
+    "lastSuccess": "2026-10-16T06:59:30Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
