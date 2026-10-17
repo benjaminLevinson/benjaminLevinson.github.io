@@ -5267,12 +5267,12 @@
       "start": "2026-10-16T05:00:00.000Z",
       "end": "2026-11-17T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-17T00:04:02Z"
+    "lastSuccess": "2026-10-17T01:04:25Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-17T00:04:02Z",
-    "lastSuccess": "2026-10-17T00:04:02Z",
+    "lastAttempt": "2026-10-17T01:04:25Z",
+    "lastSuccess": "2026-10-17T01:04:25Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
