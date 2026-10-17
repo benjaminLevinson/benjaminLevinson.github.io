@@ -5286,12 +5286,12 @@
       "start": "2026-10-17T05:00:00.000Z",
       "end": "2026-11-18T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-17T19:09:57Z"
+    "lastSuccess": "2026-10-17T20:10:12Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-17T19:09:57Z",
-    "lastSuccess": "2026-10-17T19:09:57Z",
+    "lastAttempt": "2026-10-17T20:10:12Z",
+    "lastSuccess": "2026-10-17T20:10:12Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
