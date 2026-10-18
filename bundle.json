@@ -5286,19 +5286,19 @@
       "start": "2026-10-18T05:00:00.000Z",
       "end": "2026-11-19T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-18T15:15:35Z"
+    "lastSuccess": "2026-10-18T16:15:51Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-18T15:15:35Z",
-    "lastSuccess": "2026-10-18T15:15:35Z",
+    "lastAttempt": "2026-10-18T16:15:51Z",
+    "lastSuccess": "2026-10-18T16:15:51Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-18T05:00:00.000Z",
       "end": "2026-11-19T06:00:00.000Z"
     },
-    "sourceCount": 228,
+    "sourceCount": 226,
     "feedCount": 277,
     "staleAfterHours": 6
   },
