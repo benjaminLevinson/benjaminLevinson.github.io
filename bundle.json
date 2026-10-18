@@ -5283,20 +5283,20 @@
       }
     },
     "coverage": {
-      "start": "2026-10-17T05:00:00.000Z",
-      "end": "2026-11-18T06:00:00.000Z"
+      "start": "2026-10-18T05:00:00.000Z",
+      "end": "2026-11-19T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-18T04:12:24Z"
+    "lastSuccess": "2026-10-18T05:12:41Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-18T04:12:24Z",
-    "lastSuccess": "2026-10-18T04:12:24Z",
+    "lastAttempt": "2026-10-18T05:12:41Z",
+    "lastSuccess": "2026-10-18T05:12:41Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
-      "start": "2026-10-17T05:00:00.000Z",
-      "end": "2026-11-18T06:00:00.000Z"
+      "start": "2026-10-18T05:00:00.000Z",
+      "end": "2026-11-19T06:00:00.000Z"
     },
     "sourceCount": 228,
     "feedCount": 277,
