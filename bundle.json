@@ -5305,19 +5305,19 @@
       "start": "2026-10-19T05:00:00.000Z",
       "end": "2026-11-20T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-19T21:24:22Z"
+    "lastSuccess": "2026-10-19T22:24:38Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-19T21:24:22Z",
-    "lastSuccess": "2026-10-19T21:24:22Z",
+    "lastAttempt": "2026-10-19T22:24:38Z",
+    "lastSuccess": "2026-10-19T22:24:38Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-19T05:00:00.000Z",
       "end": "2026-11-20T06:00:00.000Z"
     },
-    "sourceCount": 221,
+    "sourceCount": 220,
     "feedCount": 278,
     "staleAfterHours": 6
   },
