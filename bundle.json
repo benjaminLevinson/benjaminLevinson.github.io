@@ -5305,12 +5305,12 @@
       "start": "2026-10-19T05:00:00.000Z",
       "end": "2026-11-20T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-19T19:23:45Z"
+    "lastSuccess": "2026-10-19T20:24:02Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-19T19:23:45Z",
-    "lastSuccess": "2026-10-19T19:23:45Z",
+    "lastAttempt": "2026-10-19T20:24:02Z",
+    "lastSuccess": "2026-10-19T20:24:02Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
