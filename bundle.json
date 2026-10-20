@@ -5324,12 +5324,12 @@
       "start": "2026-10-20T05:00:00.000Z",
       "end": "2026-11-21T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-20T07:27:29Z"
+    "lastSuccess": "2026-10-20T08:27:46Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-20T07:27:29Z",
-    "lastSuccess": "2026-10-20T07:27:29Z",
+    "lastAttempt": "2026-10-20T08:27:46Z",
+    "lastSuccess": "2026-10-20T08:27:46Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
