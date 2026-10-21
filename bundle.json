@@ -5328,10 +5328,10 @@
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-20T23:31:53Z",
+    "lastAttempt": "2026-10-21T00:32:11Z",
     "lastSuccess": "2026-10-20T23:31:53Z",
-    "refreshStatus": "ok",
-    "error": null,
+    "refreshStatus": "failed",
+    "error": "incomplete",
     "coverage": {
       "start": "2026-10-20T05:00:00.000Z",
       "end": "2026-11-21T06:00:00.000Z"
