@@ -6122,12 +6122,12 @@
       "start": "2026-10-21T05:00:00.000Z",
       "end": "2026-11-22T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-21T18:37:16Z"
+    "lastSuccess": "2026-10-21T19:37:31Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-21T18:37:16Z",
-    "lastSuccess": "2026-10-21T18:37:16Z",
+    "lastAttempt": "2026-10-21T19:37:31Z",
+    "lastSuccess": "2026-10-21T19:37:31Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
