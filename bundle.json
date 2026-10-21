@@ -5324,19 +5324,19 @@
       "start": "2026-10-21T05:00:00.000Z",
       "end": "2026-11-22T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-21T11:35:22Z"
+    "lastSuccess": "2026-10-21T12:35:38Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-21T11:35:22Z",
-    "lastSuccess": "2026-10-21T11:35:22Z",
+    "lastAttempt": "2026-10-21T12:35:38Z",
+    "lastSuccess": "2026-10-21T12:35:38Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-21T05:00:00.000Z",
       "end": "2026-11-22T06:00:00.000Z"
     },
-    "sourceCount": 206,
+    "sourceCount": 205,
     "feedCount": 279,
     "staleAfterHours": 6
   },
