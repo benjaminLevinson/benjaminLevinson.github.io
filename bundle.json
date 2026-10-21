@@ -6122,19 +6122,19 @@
       "start": "2026-10-21T05:00:00.000Z",
       "end": "2026-11-22T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-21T21:38:09Z"
+    "lastSuccess": "2026-10-21T22:38:26Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-21T21:38:09Z",
-    "lastSuccess": "2026-10-21T21:38:09Z",
+    "lastAttempt": "2026-10-21T22:38:26Z",
+    "lastSuccess": "2026-10-21T22:38:26Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-21T05:00:00.000Z",
       "end": "2026-11-22T06:00:00.000Z"
     },
-    "sourceCount": 243,
+    "sourceCount": 242,
     "feedCount": 321,
     "staleAfterHours": 6
   },
