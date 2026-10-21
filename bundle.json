@@ -5328,7 +5328,7 @@
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-21T02:32:46Z",
+    "lastAttempt": "2026-10-21T03:33:01Z",
     "lastSuccess": "2026-10-20T23:31:53Z",
     "refreshStatus": "failed",
     "error": "incomplete",
