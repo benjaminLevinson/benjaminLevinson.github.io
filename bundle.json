@@ -6179,12 +6179,12 @@
       "start": "2026-10-22T05:00:00.000Z",
       "end": "2026-11-23T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-22T05:40:27Z"
+    "lastSuccess": "2026-10-22T06:40:43Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-22T05:40:27Z",
-    "lastSuccess": "2026-10-22T05:40:27Z",
+    "lastAttempt": "2026-10-22T06:40:43Z",
+    "lastSuccess": "2026-10-22T06:40:43Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
