@@ -6331,12 +6331,12 @@
       "start": "2026-10-23T05:00:00.000Z",
       "end": "2026-11-24T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-23T15:50:27Z"
+    "lastSuccess": "2026-10-23T16:50:44Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-23T15:50:27Z",
-    "lastSuccess": "2026-10-23T15:50:27Z",
+    "lastAttempt": "2026-10-23T16:50:44Z",
+    "lastSuccess": "2026-10-23T16:50:44Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
