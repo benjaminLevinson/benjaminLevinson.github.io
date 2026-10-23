@@ -6331,19 +6331,19 @@
       "start": "2026-10-23T05:00:00.000Z",
       "end": "2026-11-24T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-23T20:51:50Z"
+    "lastSuccess": "2026-10-23T21:52:06Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-23T20:51:50Z",
-    "lastSuccess": "2026-10-23T20:51:50Z",
+    "lastAttempt": "2026-10-23T21:52:06Z",
+    "lastSuccess": "2026-10-23T21:52:06Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-23T05:00:00.000Z",
       "end": "2026-11-24T06:00:00.000Z"
     },
-    "sourceCount": 234,
+    "sourceCount": 233,
     "feedCount": 332,
     "staleAfterHours": 6
   },
