@@ -6540,12 +6540,12 @@
       "start": "2026-10-24T05:00:00.000Z",
       "end": "2026-11-25T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-24T20:58:47Z"
+    "lastSuccess": "2026-10-24T21:59:06Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-24T20:58:47Z",
-    "lastSuccess": "2026-10-24T20:58:47Z",
+    "lastAttempt": "2026-10-24T21:59:06Z",
+    "lastSuccess": "2026-10-24T21:59:06Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
