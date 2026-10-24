@@ -6502,12 +6502,12 @@
       "start": "2026-10-24T05:00:00.000Z",
       "end": "2026-11-25T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-24T10:55:51Z"
+    "lastSuccess": "2026-10-24T11:56:07Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-24T10:55:51Z",
-    "lastSuccess": "2026-10-24T10:55:51Z",
+    "lastAttempt": "2026-10-24T11:56:07Z",
+    "lastSuccess": "2026-10-24T11:56:07Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
