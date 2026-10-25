@@ -6730,19 +6730,19 @@
       "start": "2026-10-25T05:00:00.000Z",
       "end": "2026-11-26T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-25T17:05:02Z"
+    "lastSuccess": "2026-10-25T18:05:21Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-25T17:05:02Z",
-    "lastSuccess": "2026-10-25T17:05:02Z",
+    "lastAttempt": "2026-10-25T18:05:21Z",
+    "lastSuccess": "2026-10-25T18:05:21Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-25T05:00:00.000Z",
       "end": "2026-11-26T06:00:00.000Z"
     },
-    "sourceCount": 247,
+    "sourceCount": 246,
     "feedCount": 353,
     "staleAfterHours": 6
   },
