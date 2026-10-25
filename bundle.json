@@ -6711,12 +6711,12 @@
       "start": "2026-10-25T05:00:00.000Z",
       "end": "2026-11-26T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-25T10:02:50Z"
+    "lastSuccess": "2026-10-25T11:03:11Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-25T10:02:50Z",
-    "lastSuccess": "2026-10-25T10:02:50Z",
+    "lastAttempt": "2026-10-25T11:03:11Z",
+    "lastSuccess": "2026-10-25T11:03:11Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
