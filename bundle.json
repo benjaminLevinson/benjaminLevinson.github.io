@@ -6730,12 +6730,12 @@
       "start": "2026-10-25T05:00:00.000Z",
       "end": "2026-11-26T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-25T23:06:51Z"
+    "lastSuccess": "2026-10-26T00:07:08Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-25T23:06:51Z",
-    "lastSuccess": "2026-10-25T23:06:51Z",
+    "lastAttempt": "2026-10-26T00:07:08Z",
+    "lastSuccess": "2026-10-26T00:07:08Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
