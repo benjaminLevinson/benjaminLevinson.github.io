@@ -6939,12 +6939,12 @@
       "start": "2026-10-26T05:00:00.000Z",
       "end": "2026-11-27T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-27T03:15:43Z"
+    "lastSuccess": "2026-10-27T04:15:58Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-27T03:15:43Z",
-    "lastSuccess": "2026-10-27T03:15:43Z",
+    "lastAttempt": "2026-10-27T04:15:58Z",
+    "lastSuccess": "2026-10-27T04:15:58Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
