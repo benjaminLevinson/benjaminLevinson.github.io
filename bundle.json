@@ -2312,9 +2312,9 @@
         "sequence": 0,
         "created": "2026-10-12T14:01:33Z",
         "modified": "2026-10-12T14:01:33Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-27T00:14:53Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-27T00:14:53Z",
         "cancellationReason": null
       },
       "103349": {
@@ -6939,19 +6939,19 @@
       "start": "2026-10-26T05:00:00.000Z",
       "end": "2026-11-27T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-26T23:14:34Z"
+    "lastSuccess": "2026-10-27T00:14:53Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-26T23:14:34Z",
-    "lastSuccess": "2026-10-26T23:14:34Z",
+    "lastAttempt": "2026-10-27T00:14:53Z",
+    "lastSuccess": "2026-10-27T00:14:53Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-26T05:00:00.000Z",
       "end": "2026-11-27T06:00:00.000Z"
     },
-    "sourceCount": 250,
+    "sourceCount": 247,
     "feedCount": 364,
     "staleAfterHours": 6
   },
