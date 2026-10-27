@@ -7091,19 +7091,19 @@
       "start": "2026-10-27T05:00:00.000Z",
       "end": "2026-11-28T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-27T16:20:10Z"
+    "lastSuccess": "2026-10-27T17:20:31Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-27T16:20:10Z",
-    "lastSuccess": "2026-10-27T16:20:10Z",
+    "lastAttempt": "2026-10-27T17:20:31Z",
+    "lastSuccess": "2026-10-27T17:20:31Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-27T05:00:00.000Z",
       "end": "2026-11-28T06:00:00.000Z"
     },
-    "sourceCount": 252,
+    "sourceCount": 250,
     "feedCount": 372,
     "staleAfterHours": 6
   },
