@@ -7091,12 +7091,12 @@
       "start": "2026-10-27T05:00:00.000Z",
       "end": "2026-11-28T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-28T03:23:33Z"
+    "lastSuccess": "2026-10-28T04:23:51Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-28T03:23:33Z",
-    "lastSuccess": "2026-10-28T03:23:33Z",
+    "lastAttempt": "2026-10-28T04:23:51Z",
+    "lastSuccess": "2026-10-28T04:23:51Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
