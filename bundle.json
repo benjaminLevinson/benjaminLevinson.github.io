@@ -7190,10 +7190,10 @@
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-28T05:24:11Z",
+    "lastAttempt": "2026-10-28T06:24:30Z",
     "lastSuccess": "2026-10-28T05:24:11Z",
-    "refreshStatus": "ok",
-    "error": null,
+    "refreshStatus": "failed",
+    "error": "incomplete",
     "coverage": {
       "start": "2026-10-28T05:00:00.000Z",
       "end": "2026-11-29T06:00:00.000Z"
