@@ -6948,9 +6948,9 @@
         "sequence": 0,
         "created": "2026-10-27T05:16:20Z",
         "modified": "2026-10-27T05:16:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110232": {
@@ -6967,9 +6967,9 @@
         "sequence": 0,
         "created": "2026-10-27T05:16:20Z",
         "modified": "2026-10-27T05:16:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110231": {
@@ -6986,9 +6986,9 @@
         "sequence": 0,
         "created": "2026-10-27T05:16:20Z",
         "modified": "2026-10-27T05:16:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110235": {
@@ -7005,9 +7005,9 @@
         "sequence": 0,
         "created": "2026-10-27T05:16:20Z",
         "modified": "2026-10-27T05:16:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110233": {
@@ -7024,9 +7024,9 @@
         "sequence": 0,
         "created": "2026-10-27T05:16:20Z",
         "modified": "2026-10-27T05:16:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110251": {
@@ -7043,9 +7043,9 @@
         "sequence": 0,
         "created": "2026-10-27T05:16:20Z",
         "modified": "2026-10-27T05:16:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110234": {
@@ -7062,9 +7062,9 @@
         "sequence": 0,
         "created": "2026-10-27T05:16:20Z",
         "modified": "2026-10-27T05:16:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110269": {
@@ -7081,9 +7081,9 @@
         "sequence": 0,
         "created": "2026-10-27T06:16:42Z",
         "modified": "2026-10-27T06:16:42Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110298": {
@@ -7100,9 +7100,9 @@
         "sequence": 0,
         "created": "2026-10-28T05:24:11Z",
         "modified": "2026-10-28T05:24:11Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-28T12:26:25Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-28T12:26:25Z",
         "cancellationReason": null
       },
       "110288": {
@@ -7205,19 +7205,19 @@
       "start": "2026-10-28T05:00:00.000Z",
       "end": "2026-11-29T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-28T11:26:10Z"
+    "lastSuccess": "2026-10-28T12:26:25Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-28T11:26:10Z",
-    "lastSuccess": "2026-10-28T11:26:10Z",
+    "lastAttempt": "2026-10-28T12:26:25Z",
+    "lastSuccess": "2026-10-28T12:26:25Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-28T05:00:00.000Z",
       "end": "2026-11-29T06:00:00.000Z"
     },
-    "sourceCount": 248,
+    "sourceCount": 238,
     "feedCount": 378,
     "staleAfterHours": 6
   },
