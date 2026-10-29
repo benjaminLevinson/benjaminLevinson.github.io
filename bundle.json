@@ -7528,12 +7528,12 @@
       "start": "2026-10-29T05:00:00.000Z",
       "end": "2026-11-30T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-29T17:35:04Z"
+    "lastSuccess": "2026-10-29T18:35:24Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-29T17:35:04Z",
-    "lastSuccess": "2026-10-29T17:35:04Z",
+    "lastAttempt": "2026-10-29T18:35:24Z",
+    "lastSuccess": "2026-10-29T18:35:24Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
