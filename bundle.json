@@ -7233,9 +7233,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "91347": {
@@ -7252,9 +7252,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "91564": {
@@ -7271,9 +7271,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "91823": {
@@ -7290,9 +7290,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "91926": {
@@ -7309,9 +7309,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "91990": {
@@ -7328,9 +7328,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "92036": {
@@ -7347,9 +7347,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "92190": {
@@ -7366,9 +7366,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "92243": {
@@ -7385,9 +7385,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "92309": {
@@ -7404,9 +7404,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "92413": {
@@ -7423,9 +7423,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "92476": {
@@ -7442,9 +7442,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "92648": {
@@ -7461,9 +7461,9 @@
         "sequence": 0,
         "created": "2026-10-28T15:27:20Z",
         "modified": "2026-10-28T15:27:20Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-10-29T14:34:14Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-10-29T14:34:14Z",
         "cancellationReason": null
       },
       "110310": {
@@ -7528,19 +7528,19 @@
       "start": "2026-10-29T05:00:00.000Z",
       "end": "2026-11-30T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-29T13:33:57Z"
+    "lastSuccess": "2026-10-29T14:34:14Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-29T13:33:57Z",
-    "lastSuccess": "2026-10-29T13:33:57Z",
+    "lastAttempt": "2026-10-29T14:34:14Z",
+    "lastSuccess": "2026-10-29T14:34:14Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-29T05:00:00.000Z",
       "end": "2026-11-30T06:00:00.000Z"
     },
-    "sourceCount": 243,
+    "sourceCount": 230,
     "feedCount": 395,
     "staleAfterHours": 6
   },
