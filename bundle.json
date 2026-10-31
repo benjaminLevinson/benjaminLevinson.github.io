@@ -7813,14 +7813,14 @@
       "start": "2026-10-31T05:00:00.000Z",
       "end": "2026-12-01T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-31T21:51:02Z"
+    "lastSuccess": "2026-10-31T23:21:16Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-31T22:20:55Z",
-    "lastSuccess": "2026-10-31T21:51:02Z",
-    "refreshStatus": "failed",
-    "error": "schema_error",
+    "lastAttempt": "2026-10-31T23:21:16Z",
+    "lastSuccess": "2026-10-31T23:21:16Z",
+    "refreshStatus": "ok",
+    "error": null,
     "coverage": {
       "start": "2026-10-31T05:00:00.000Z",
       "end": "2026-12-01T06:00:00.000Z"
