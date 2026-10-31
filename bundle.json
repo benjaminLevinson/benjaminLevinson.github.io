@@ -7813,19 +7813,19 @@
       "start": "2026-10-31T05:00:00.000Z",
       "end": "2026-12-01T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-31T17:49:45Z"
+    "lastSuccess": "2026-10-31T18:50:01Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-31T17:49:45Z",
-    "lastSuccess": "2026-10-31T17:49:45Z",
+    "lastAttempt": "2026-10-31T18:50:01Z",
+    "lastSuccess": "2026-10-31T18:50:01Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-10-31T05:00:00.000Z",
       "end": "2026-12-01T06:00:00.000Z"
     },
-    "sourceCount": 230,
+    "sourceCount": 229,
     "feedCount": 410,
     "staleAfterHours": 6
   },
