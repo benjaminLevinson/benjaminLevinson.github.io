@@ -7813,12 +7813,12 @@
       "start": "2026-10-31T05:00:00.000Z",
       "end": "2026-12-01T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-31T10:47:37Z"
+    "lastSuccess": "2026-10-31T11:47:54Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-31T10:47:37Z",
-    "lastSuccess": "2026-10-31T10:47:37Z",
+    "lastAttempt": "2026-10-31T11:47:54Z",
+    "lastSuccess": "2026-10-31T11:47:54Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
