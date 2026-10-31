@@ -7680,12 +7680,12 @@
       "start": "2026-10-30T05:00:00.000Z",
       "end": "2026-12-01T06:00:00.000Z"
     },
-    "lastSuccess": "2026-10-31T01:44:46Z"
+    "lastSuccess": "2026-10-31T02:45:04Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-10-31T01:44:46Z",
-    "lastSuccess": "2026-10-31T01:44:46Z",
+    "lastAttempt": "2026-10-31T02:45:04Z",
+    "lastSuccess": "2026-10-31T02:45:04Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
