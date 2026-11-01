@@ -8003,19 +8003,19 @@
       "start": "2026-11-01T05:00:00.000Z",
       "end": "2026-12-02T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-01T17:26:53Z"
+    "lastSuccess": "2026-11-01T18:27:12Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-01T17:26:53Z",
-    "lastSuccess": "2026-11-01T17:26:53Z",
+    "lastAttempt": "2026-11-01T18:27:12Z",
+    "lastSuccess": "2026-11-01T18:27:12Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-01T05:00:00.000Z",
       "end": "2026-12-02T06:00:00.000Z"
     },
-    "sourceCount": 238,
+    "sourceCount": 237,
     "feedCount": 420,
     "staleAfterHours": 6
   },
