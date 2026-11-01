@@ -8003,12 +8003,12 @@
       "start": "2026-11-01T05:00:00.000Z",
       "end": "2026-12-02T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-01T20:27:50Z"
+    "lastSuccess": "2026-11-01T21:28:09Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-01T20:27:50Z",
-    "lastSuccess": "2026-11-01T20:27:50Z",
+    "lastAttempt": "2026-11-01T21:28:09Z",
+    "lastSuccess": "2026-11-01T21:28:09Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
