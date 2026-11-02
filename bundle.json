@@ -8231,19 +8231,19 @@
       "start": "2026-11-02T06:00:00.000Z",
       "end": "2026-12-03T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-02T22:35:55Z"
+    "lastSuccess": "2026-11-02T23:36:13Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-02T22:35:55Z",
-    "lastSuccess": "2026-11-02T22:35:55Z",
+    "lastAttempt": "2026-11-02T23:36:13Z",
+    "lastSuccess": "2026-11-02T23:36:13Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-02T06:00:00.000Z",
       "end": "2026-12-03T06:00:00.000Z"
     },
-    "sourceCount": 241,
+    "sourceCount": 239,
     "feedCount": 432,
     "staleAfterHours": 6
   },
