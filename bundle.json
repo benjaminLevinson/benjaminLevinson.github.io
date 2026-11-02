@@ -8231,12 +8231,12 @@
       "start": "2026-11-02T06:00:00.000Z",
       "end": "2026-12-03T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-02T20:35:17Z"
+    "lastSuccess": "2026-11-02T21:35:35Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-02T20:35:17Z",
-    "lastSuccess": "2026-11-02T20:35:17Z",
+    "lastAttempt": "2026-11-02T21:35:35Z",
+    "lastSuccess": "2026-11-02T21:35:35Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
