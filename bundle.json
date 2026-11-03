@@ -8402,19 +8402,19 @@
       "start": "2026-11-03T06:00:00.000Z",
       "end": "2026-12-04T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-03T17:42:01Z"
+    "lastSuccess": "2026-11-03T18:42:17Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-03T17:42:01Z",
-    "lastSuccess": "2026-11-03T17:42:01Z",
+    "lastAttempt": "2026-11-03T18:42:17Z",
+    "lastSuccess": "2026-11-03T18:42:17Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-03T06:00:00.000Z",
       "end": "2026-12-04T06:00:00.000Z"
     },
-    "sourceCount": 242,
+    "sourceCount": 240,
     "feedCount": 441,
     "staleAfterHours": 6
   },
