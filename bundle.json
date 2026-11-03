@@ -2958,9 +2958,9 @@
         "sequence": 0,
         "created": "2026-10-12T14:01:33Z",
         "modified": "2026-10-12T14:01:33Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-03T01:36:52Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-03T01:36:52Z",
         "cancellationReason": null
       },
       "100864": {
@@ -8231,19 +8231,19 @@
       "start": "2026-11-02T06:00:00.000Z",
       "end": "2026-12-03T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-03T00:36:32Z"
+    "lastSuccess": "2026-11-03T01:36:52Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-03T00:36:32Z",
-    "lastSuccess": "2026-11-03T00:36:32Z",
+    "lastAttempt": "2026-11-03T01:36:52Z",
+    "lastSuccess": "2026-11-03T01:36:52Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-02T06:00:00.000Z",
       "end": "2026-12-03T06:00:00.000Z"
     },
-    "sourceCount": 237,
+    "sourceCount": 235,
     "feedCount": 432,
     "staleAfterHours": 6
   },
