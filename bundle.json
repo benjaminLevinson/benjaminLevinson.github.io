@@ -8402,12 +8402,12 @@
       "start": "2026-11-03T06:00:00.000Z",
       "end": "2026-12-04T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-03T18:42:17Z"
+    "lastSuccess": "2026-11-03T19:42:36Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-03T18:42:17Z",
-    "lastSuccess": "2026-11-03T18:42:17Z",
+    "lastAttempt": "2026-11-03T19:42:36Z",
+    "lastSuccess": "2026-11-03T19:42:36Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
