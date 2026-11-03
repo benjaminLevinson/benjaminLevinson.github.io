@@ -6872,9 +6872,9 @@
         "sequence": 0,
         "created": "2026-10-26T05:08:44Z",
         "modified": "2026-10-26T05:08:44Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-03T21:43:12Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-03T21:43:12Z",
         "cancellationReason": null
       },
       "110167": {
@@ -6891,9 +6891,9 @@
         "sequence": 0,
         "created": "2026-10-26T05:08:44Z",
         "modified": "2026-10-26T05:08:44Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-03T21:43:12Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-03T21:43:12Z",
         "cancellationReason": null
       },
       "110192": {
@@ -6929,9 +6929,9 @@
         "sequence": 0,
         "created": "2026-10-26T06:09:05Z",
         "modified": "2026-10-26T06:09:05Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-03T21:43:12Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-03T21:43:12Z",
         "cancellationReason": null
       },
       "110248": {
@@ -8421,19 +8421,19 @@
       "start": "2026-11-03T06:00:00.000Z",
       "end": "2026-12-04T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-03T20:42:53Z"
+    "lastSuccess": "2026-11-03T21:43:12Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-03T20:42:53Z",
-    "lastSuccess": "2026-11-03T20:42:53Z",
+    "lastAttempt": "2026-11-03T21:43:12Z",
+    "lastSuccess": "2026-11-03T21:43:12Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-03T06:00:00.000Z",
       "end": "2026-12-04T06:00:00.000Z"
     },
-    "sourceCount": 241,
+    "sourceCount": 238,
     "feedCount": 442,
     "staleAfterHours": 6
   },
