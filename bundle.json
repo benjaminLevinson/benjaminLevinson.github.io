@@ -8421,12 +8421,12 @@
       "start": "2026-11-03T06:00:00.000Z",
       "end": "2026-12-04T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-04T03:44:56Z"
+    "lastSuccess": "2026-11-04T04:45:14Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-04T03:44:56Z",
-    "lastSuccess": "2026-11-04T03:44:56Z",
+    "lastAttempt": "2026-11-04T04:45:14Z",
+    "lastSuccess": "2026-11-04T04:45:14Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
