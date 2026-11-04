@@ -8535,19 +8535,19 @@
       "start": "2026-11-04T06:00:00.000Z",
       "end": "2026-12-05T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-04T21:50:38Z"
+    "lastSuccess": "2026-11-04T23:51:12Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-04T22:50:53Z",
-    "lastSuccess": "2026-11-04T21:50:38Z",
-    "refreshStatus": "failed",
-    "error": "incomplete",
+    "lastAttempt": "2026-11-04T23:51:12Z",
+    "lastSuccess": "2026-11-04T23:51:12Z",
+    "refreshStatus": "ok",
+    "error": null,
     "coverage": {
       "start": "2026-11-04T06:00:00.000Z",
       "end": "2026-12-05T06:00:00.000Z"
     },
-    "sourceCount": 234,
+    "sourceCount": 230,
     "feedCount": 448,
     "staleAfterHours": 6
   },
