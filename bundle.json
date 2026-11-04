@@ -8535,12 +8535,12 @@
       "start": "2026-11-04T06:00:00.000Z",
       "end": "2026-12-05T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-04T15:48:49Z"
+    "lastSuccess": "2026-11-04T16:49:09Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-04T15:48:49Z",
-    "lastSuccess": "2026-11-04T15:48:49Z",
+    "lastAttempt": "2026-11-04T16:49:09Z",
+    "lastSuccess": "2026-11-04T16:49:09Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
