@@ -8592,12 +8592,12 @@
       "start": "2026-11-05T06:00:00.000Z",
       "end": "2026-12-06T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-05T15:56:06Z"
+    "lastSuccess": "2026-11-05T16:56:25Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-05T15:56:06Z",
-    "lastSuccess": "2026-11-05T15:56:06Z",
+    "lastAttempt": "2026-11-05T16:56:25Z",
+    "lastSuccess": "2026-11-05T16:56:25Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
