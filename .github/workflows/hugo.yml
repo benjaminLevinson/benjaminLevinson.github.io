@@ -81,6 +81,8 @@ jobs:
             hugo-
       - name: Stage validated Crux feed in the full site
         run: python3 scripts/crux/stage.py --output static/crux
+      - name: Stage validated AFS feed in the full site
+        run: python3 scripts/afs/stage.py --output static/afs
       - name: Build the site
         run: |
           hugo \

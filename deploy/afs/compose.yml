@@ -1,0 +1,45 @@
+# Integrate into /docker/docker-compose.yml; use immutable built image IDs.
+services:
+  afs-collector:
+    image: sha256:2518fa8031147e4b2cf0e571f95097688987ce57bb5df03c7a3bc680d97a88af
+    pull_policy: never
+    init: true
+    restart: unless-stopped
+    user: '1000:1000'
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment:
+      TZ: America/Chicago
+    volumes:
+      - /docker/appdata/afs-feed/data:/data
+    networks: [afs-egress]
+    labels:
+      homelab.backup.pause: 'true'
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+    healthcheck:
+      test: [CMD, python3, /app/health.py]
+      interval: 60s
+      timeout: 5s
+      retries: 3
+      start_period: 1800s
+  afs-publisher:
+    image: sha256:05a185378ed3ad8c0eb2084328ea902b49fb19ba53a8f90586b8a596117bff50
+    pull_policy: never
+    init: true
+    restart: unless-stopped
+    user: '1000:1000'
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    volumes:
+      - /docker/appdata/afs-feed/data:/data:ro
+      - /docker/appdata/crux-feed/secrets/github-token:/run/secrets/afs_github_token:ro
+    networks: [afs-egress]
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+networks:
+  afs-egress: {}

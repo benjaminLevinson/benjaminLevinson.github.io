@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="post-single">
+<header class="post-header"><h1 class="post-title">{{ .Title }}</h1></header>
+<div class="post-content">
+{{ .Content }}
+<p><a href="webcal://blev.dev/afs/calendar.ics">Subscribe to the calendar</a> · <a href="calendar.ics">Download ICS</a> · <a href="https://www.austinfilm.org/calendar/">View AFS’s calendar</a></p>
+<p>For Google Calendar, use <strong>Other calendars → From URL</strong> on the web and paste <code>https://blev.dev/afs/calendar.ics</code>. Subscribe rather than importing a one-time copy to receive updates.</p>
+<p id="afs-status" role="status">Checking the last successful refresh…</p>
+<noscript><p>See <a href="status.json">refresh status</a> for the last successful collection time.</p></noscript>
+<h2>Upcoming screenings</h2>
+<ul id="afs-events"><li>Loading published screenings…</li></ul>
+<p>Dates and times follow Austin’s America/Chicago timezone, including daylight-saving changes. Your calendar app may display your device’s timezone. End times use the film runtime and are estimates; introductions and Q&amp;A can run longer.</p>
+<p>Only explicitly designated showings are included. There is no assumed monthly recurrence. Removed future showings are retained as cancelled after two complete checks at least six hours apart; verify any change with AFS.</p>
+</div></article>
+<script>
+(async()=>{
+ const statusEl=document.getElementById('afs-status');const list=document.getElementById('afs-events');
+ try{
+  const r=await fetch('bundle.json',{cache:'no-store'});if(!r.ok)throw Error();
+  const b=await r.json();const s=b.status;const success=new Date(s.lastSuccess);
+  if(!Number.isFinite(success.valueOf()))throw Error();
+  const stale=Date.now()-success.valueOf()>s.staleAfterHours*3600000;
+  statusEl.textContent=(stale?'Out of date. ':s.refreshStatus==='failed'?'Refresh paused; showing the last good calendar. ':'Up to date. ')+
+   'Last successful check: '+new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'}).format(success)+'.';
+  list.replaceChildren();
+  const events=Object.values(b.state.events).map(r=>r.event).filter(e=>new Date(e.start)>new Date()&&e.status==='active').sort((a,b)=>a.start.localeCompare(b.start));
+  for(const e of events){
+   const li=document.createElement('li');const a=document.createElement('a');
+   if(!/^https:\/\/www\.austinfilm\.org\/screening\/[a-z0-9-]+\/$/.test(e.source))throw Error();
+   a.href=e.source;a.textContent=e.title;li.append(a,document.createTextNode(' — '+new Intl.DateTimeFormat(undefined,{timeZone:'America/Chicago',dateStyle:'full',timeStyle:'short'}).format(new Date(e.start))+' (Austin time)'));list.append(li);
+  }
+  if(!events.length){const li=document.createElement('li');li.textContent='No upcoming designated screenings were found in the last successful check. New dates appear when AFS publishes them.';list.append(li);}
+ }catch{statusEl.textContent='Freshness could not be verified. Check AFS before relying on this calendar.';list.replaceChildren();}
+})();
+</script>
+{{ end }}
