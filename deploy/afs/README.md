@@ -1,6 +1,6 @@
 # AFS Member Mondays
 
-Intended subscription: https://blev.dev/afs/calendar.ics. Intended landing page: https://blev.dev/afs/. Publication is pending approval; these URLs are not live yet.
+Subscription: https://blev.dev/afs/calendar.ics. Landing page: https://blev.dev/afs/.
 
 Debian collects official public AFS HTML every six hours and a separate publisher updates the existing website repository's `afs-data` branch. The existing hourly full-site Hugo build stages this feed alongside Crux. No inbound ports, reverse-proxy changes, calendar-account permissions, or new paid service are required.
 
@@ -50,7 +50,7 @@ For updates, retain state, build reviewed images, update only these image refere
 
 The existing daily 03:00 America/Chicago backup covers `/docker` and `/home/server`; the collector carries `homelab.backup.pause=true`. The 2026-11-05 backup completed with archive/exit code 0 before this deployment. The new state will be covered by the next run; a separate initial recovery copy is retained with deployment evidence. Publisher access is read-only and does not need pausing. No backup policy is changed.
 
-## Verification and current handoff (2026-11-05)
+## Verification and deployment (2026-11-05)
 
 A complete live public scan checked 64 film pages without parsing errors. It found:
 
@@ -59,10 +59,10 @@ A complete live public scan checked 64 film pages without parsing errors. It fou
 
 The 36 AFS tests and all 32 existing Crux tests pass. An independent icalendar parser accepts the feed. The entire 33-page site builds using production Hugo 0.154.2; both subscription pages and both ICS files are present. The Mac's newer system Hugo 0.161.1 hits a pre-existing RSS template incompatibility, so verification used the exact production binary, with its upstream checksum verified.
 
-The reviewed Compose candidate leaves all 56 existing service definitions unchanged. Private recovery files are at `/docker/backups/afs-feed-20261105T232325Z/`, with a checksummed off-host copy in the task workspace. The main Compose file has not yet been changed.
-
-Public deployment is pending explicit user approval. Automatic approval review rejected the new `afs-data` branch push because building the feed did not explicitly authorize this public publication step. That command did not execute. No branch was pushed, no publisher was started, and the live site remains unchanged. The intended public URL is not yet live. Do not publish until this approval is resolved.
+The reviewed Compose candidate leaves all 56 existing service definitions unchanged. Private recovery files are at `/docker/backups/afs-feed-20261105T232325Z/`, with a checksummed off-host copy in the task workspace. The approved candidate is installed in the main Compose file; only the two AFS services were started.
 
 The isolated Debian container completed a fresh 64-page scan at **2026-11-05T23:36:00Z**, with two events and no errors. Its ICS bytes and event records matched the first complete scan exactly (stable IDs, SEQUENCE 0, original creation/modification timestamps). The independent parser accepted both events, and the offline container health check passed. ICS SHA-256: `19e5790e24772423fe221ad79e665fb989f0eef77465946623bdc9809f1aa493`.
 
-The temporary test container exited successfully and its network was removed. Both images and verified persistent state remain staged. No production AFS services run, no publisher has accessed the credential, no remote Git branch or site was changed, and every pre-existing running container retained its ID. The verified state is also saved at `/docker/backups/afs-feed-20261105T232325Z/bundle.verified.json` and in the off-host task evidence. Reviewed images: collector `sha256:2518fa8031147e4b2cf0e571f95097688987ce57bb5df03c7a3bc680d97a88af`; publisher `sha256:05a185378ed3ad8c0eb2084328ea902b49fb19ba53a8f90586b8a596117bff50`.
+The temporary test container exited successfully and its network was removed. After explicit user approval, both AFS services were enabled in the main stack. The collector is healthy and the publisher successfully authenticated through its existing read-only secret mount and committed the verified scan to `afs-data`. No credential value was read or copied by the assistant. Every pre-existing running container retained its ID. The verified state is also saved at `/docker/backups/afs-feed-20261105T232325Z/bundle.verified.json` and in the off-host task evidence. Reviewed images: collector `sha256:2518fa8031147e4b2cf0e571f95097688987ce57bb5df03c7a3bc680d97a88af`; publisher `sha256:05a185378ed3ad8c0eb2084328ea902b49fb19ba53a8f90586b8a596117bff50`.
+
+Collection runs every six hours, publication checks every five minutes, and the existing full-site workflow builds hourly (and on main pushes). GitHub scheduling and calendar clients can add delay. The existing website token expiration remains unchanged. The last tested source collection and health check establish successful deployment, not an uptime guarantee.
