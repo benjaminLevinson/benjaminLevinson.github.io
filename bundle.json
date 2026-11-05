@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "state": {
+    "events": {
+      "a3CUQ00000ZhGRy2AN": {
+        "event": {
+          "id": "a3CUQ00000ZhGRy2AN",
+          "title": "JIMMY",
+          "start": "2026-12-08T01:00:00Z",
+          "end": "2026-12-08T02:01:00Z",
+          "source": "https://www.austinfilm.org/screening/jimmy/",
+          "ticket": "https://austinfilmsociety.my.salesforce-sites.com/ticket/#/instances/a3CUQ00000ZhGRy2AN",
+          "location": "AFS Cinema, 6406 N IH-35 Suite 3100, Austin, TX, 78752",
+          "status": "active"
+        },
+        "fingerprint": "5d488d2598c70f966a755b82417ce0b04a625ee1517cce13b0f046a7c8c4c746",
+        "sequence": 0,
+        "created": "2026-11-05T23:25:09Z",
+        "modified": "2026-11-05T23:25:09Z",
+        "missingSince": null,
+        "lastMissingCheck": null,
+        "missingCount": 0,
+        "removalReason": null
+      },
+      "a3CUQ00000ZjWvd2AF": {
+        "event": {
+          "id": "a3CUQ00000ZjWvd2AF",
+          "title": "WHITE NIGHTS",
+          "start": "2026-11-17T01:00:00Z",
+          "end": "2026-11-17T02:41:00Z",
+          "source": "https://www.austinfilm.org/screening/white-nights/",
+          "ticket": "https://austinfilmsociety.my.salesforce-sites.com/ticket/#/instances/a3CUQ00000ZjWvd2AF",
+          "location": "AFS Cinema, 6406 N IH-35 Suite 3100, Austin, TX, 78752",
+          "status": "active"
+        },
+        "fingerprint": "ccee90ceb5ec2a42446158d1ed06cbab31ef6e2cae0f47e14ace0786a8d2925f",
+        "sequence": 0,
+        "created": "2026-11-05T23:25:09Z",
+        "modified": "2026-11-05T23:25:09Z",
+        "missingSince": null,
+        "lastMissingCheck": null,
+        "missingCount": 0,
+        "removalReason": null
+      }
+    },
+    "lastSuccess": "2026-11-05T23:25:09Z"
+  },
+  "status": {
+    "lastAttempt": "2026-11-05T23:25:09Z",
+    "lastSuccess": "2026-11-05T23:25:09Z",
+    "refreshStatus": "ok",
+    "error": null,
+    "sourceCount": 2,
+    "feedCount": 2,
+    "pagesChecked": 64,
+    "coverageStart": "2026-11-01",
+    "coverageEnd": "2027-01-09",
+    "staleAfterHours": 14
+  },
+  "calendar": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//blev.dev//AFS Member Mondays//EN\r\nCALSCALE:GREGORIAN\r\nX-WR-CALNAME:AFS Member Mondays\r\nX-WR-TIMEZONE:America/Chicago\r\nREFRESH-INTERVAL;VALUE=DURATION:PT6H\r\nX-PUBLISHED-TTL:PT6H\r\nBEGIN:VEVENT\r\nUID:afs-a3CUQ00000ZjWvd2AF@blev.dev\r\nSEQUENCE:0\r\nDTSTAMP:20261105T232509Z\r\nCREATED:20261105T232509Z\r\nLAST-MODIFIED:20261105T232509Z\r\nDTSTART:20261117T010000Z\r\nDTEND:20261117T024100Z\r\nSUMMARY:AFS Member Monday: WHITE NIGHTS\r\nLOCATION:AFS Cinema\\, 6406 N IH-35 Suite 3100\\, Austin\\, TX\\, 78752\r\nURL:https://www.austinfilm.org/screening/white-nights/\r\nDESCRIPTION:Designated Member Monday. Free admission for AFS members\\; rese\r\n rve through AFS. Check the source for availability and changes. End time i\r\n s estimated from the film runtime\\; introductions and Q&A may extend it.\\n\r\n Tickets: https://austinfilmsociety.my.salesforce-sites.com/ticket/#/instan\r\n ces/a3CUQ00000ZjWvd2AF\r\nSTATUS:CONFIRMED\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:afs-a3CUQ00000ZhGRy2AN@blev.dev\r\nSEQUENCE:0\r\nDTSTAMP:20261105T232509Z\r\nCREATED:20261105T232509Z\r\nLAST-MODIFIED:20261105T232509Z\r\nDTSTART:20261208T010000Z\r\nDTEND:20261208T020100Z\r\nSUMMARY:AFS Member Monday: JIMMY\r\nLOCATION:AFS Cinema\\, 6406 N IH-35 Suite 3100\\, Austin\\, TX\\, 78752\r\nURL:https://www.austinfilm.org/screening/jimmy/\r\nDESCRIPTION:Designated Member Monday. Free admission for AFS members\\; rese\r\n rve through AFS. Check the source for availability and changes. End time i\r\n s estimated from the film runtime\\; introductions and Q&A may extend it.\\n\r\n Tickets: https://austinfilmsociety.my.salesforce-sites.com/ticket/#/instan\r\n ces/a3CUQ00000ZhGRy2AN\r\nSTATUS:CONFIRMED\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+}
