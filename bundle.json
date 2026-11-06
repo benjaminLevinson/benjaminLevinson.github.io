@@ -8592,19 +8592,19 @@
       "start": "2026-11-05T06:00:00.000Z",
       "end": "2026-12-06T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-05T22:58:11Z"
+    "lastSuccess": "2026-11-06T00:58:44Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-05T23:58:28Z",
-    "lastSuccess": "2026-11-05T22:58:11Z",
-    "refreshStatus": "failed",
-    "error": "incomplete",
+    "lastAttempt": "2026-11-06T00:58:44Z",
+    "lastSuccess": "2026-11-06T00:58:44Z",
+    "refreshStatus": "ok",
+    "error": null,
     "coverage": {
       "start": "2026-11-05T06:00:00.000Z",
       "end": "2026-12-06T06:00:00.000Z"
     },
-    "sourceCount": 225,
+    "sourceCount": 222,
     "feedCount": 451,
     "staleAfterHours": 6
   },
