@@ -43,11 +43,11 @@
         "removalReason": null
       }
     },
-    "lastSuccess": "2026-11-06T06:11:54Z"
+    "lastSuccess": "2026-11-06T12:22:24Z"
   },
   "status": {
-    "lastAttempt": "2026-11-06T06:11:54Z",
-    "lastSuccess": "2026-11-06T06:11:54Z",
+    "lastAttempt": "2026-11-06T12:22:24Z",
+    "lastSuccess": "2026-11-06T12:22:24Z",
     "refreshStatus": "ok",
     "error": null,
     "sourceCount": 2,
