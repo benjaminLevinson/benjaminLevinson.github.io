@@ -8706,19 +8706,19 @@
       "start": "2026-11-06T06:00:00.000Z",
       "end": "2026-12-07T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-06T11:01:53Z"
+    "lastSuccess": "2026-11-06T12:02:13Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-06T11:01:53Z",
-    "lastSuccess": "2026-11-06T11:01:53Z",
+    "lastAttempt": "2026-11-06T12:02:13Z",
+    "lastSuccess": "2026-11-06T12:02:13Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-06T06:00:00.000Z",
       "end": "2026-12-07T06:00:00.000Z"
     },
-    "sourceCount": 227,
+    "sourceCount": 226,
     "feedCount": 457,
     "staleAfterHours": 6
   },
