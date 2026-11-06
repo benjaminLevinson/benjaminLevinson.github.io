@@ -8706,12 +8706,12 @@
       "start": "2026-11-06T06:00:00.000Z",
       "end": "2026-12-07T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-06T14:02:52Z"
+    "lastSuccess": "2026-11-06T15:03:11Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-06T14:02:52Z",
-    "lastSuccess": "2026-11-06T14:02:52Z",
+    "lastAttempt": "2026-11-06T15:03:11Z",
+    "lastSuccess": "2026-11-06T15:03:11Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
