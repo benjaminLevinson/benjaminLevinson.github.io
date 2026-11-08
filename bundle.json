@@ -8915,12 +8915,12 @@
       "start": "2026-11-07T06:00:00.000Z",
       "end": "2026-12-08T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-08T04:14:36Z"
+    "lastSuccess": "2026-11-08T05:14:55Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-08T04:14:36Z",
-    "lastSuccess": "2026-11-08T04:14:36Z",
+    "lastAttempt": "2026-11-08T05:14:55Z",
+    "lastSuccess": "2026-11-08T05:14:55Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
