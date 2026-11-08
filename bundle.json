@@ -9105,12 +9105,12 @@
       "start": "2026-11-08T06:00:00.000Z",
       "end": "2026-12-09T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-08T22:20:15Z"
+    "lastSuccess": "2026-11-08T23:20:32Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-08T22:20:15Z",
-    "lastSuccess": "2026-11-08T22:20:15Z",
+    "lastAttempt": "2026-11-08T23:20:32Z",
+    "lastSuccess": "2026-11-08T23:20:32Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
