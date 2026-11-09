@@ -9105,19 +9105,19 @@
       "start": "2026-11-08T06:00:00.000Z",
       "end": "2026-12-09T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-08T23:20:32Z"
+    "lastSuccess": "2026-11-09T00:20:52Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-08T23:20:32Z",
-    "lastSuccess": "2026-11-08T23:20:32Z",
+    "lastAttempt": "2026-11-09T00:20:52Z",
+    "lastSuccess": "2026-11-09T00:20:52Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-08T06:00:00.000Z",
       "end": "2026-12-09T06:00:00.000Z"
     },
-    "sourceCount": 236,
+    "sourceCount": 235,
     "feedCount": 478,
     "staleAfterHours": 6
   },
