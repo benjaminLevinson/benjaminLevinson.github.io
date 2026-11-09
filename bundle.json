@@ -5200,9 +5200,9 @@
         "sequence": 0,
         "created": "2026-10-16T14:01:07Z",
         "modified": "2026-10-16T14:01:07Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-09T14:44:52Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-09T14:44:52Z",
         "cancellationReason": null
       },
       "108923": {
@@ -6207,9 +6207,9 @@
         "sequence": 0,
         "created": "2026-10-23T11:49:12Z",
         "modified": "2026-10-23T11:49:12Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-09T14:44:52Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-09T14:44:52Z",
         "cancellationReason": null
       },
       "109963": {
@@ -7556,9 +7556,9 @@
         "sequence": 0,
         "created": "2026-10-30T11:40:30Z",
         "modified": "2026-10-30T11:40:30Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-09T14:44:52Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-09T14:44:52Z",
         "cancellationReason": null
       },
       "110343": {
@@ -8620,9 +8620,9 @@
         "sequence": 0,
         "created": "2026-11-06T06:00:15Z",
         "modified": "2026-11-06T06:00:15Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-09T14:44:52Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-09T14:44:52Z",
         "cancellationReason": null
       },
       "110695": {
@@ -9333,19 +9333,19 @@
       "start": "2026-11-09T06:00:00.000Z",
       "end": "2026-12-10T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-09T13:44:32Z"
+    "lastSuccess": "2026-11-09T14:44:52Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-09T13:44:32Z",
-    "lastSuccess": "2026-11-09T13:44:32Z",
+    "lastAttempt": "2026-11-09T14:44:52Z",
+    "lastSuccess": "2026-11-09T14:44:52Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-09T06:00:00.000Z",
       "end": "2026-12-10T06:00:00.000Z"
     },
-    "sourceCount": 247,
+    "sourceCount": 243,
     "feedCount": 490,
     "staleAfterHours": 6
   },
