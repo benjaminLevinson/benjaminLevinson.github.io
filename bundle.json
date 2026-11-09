@@ -9337,10 +9337,10 @@
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-09T17:45:47Z",
+    "lastAttempt": "2026-11-09T18:46:04Z",
     "lastSuccess": "2026-11-09T17:45:47Z",
-    "refreshStatus": "ok",
-    "error": null,
+    "refreshStatus": "failed",
+    "error": "incomplete",
     "coverage": {
       "start": "2026-11-09T06:00:00.000Z",
       "end": "2026-12-10T06:00:00.000Z"
