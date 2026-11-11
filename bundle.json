@@ -43,13 +43,13 @@
         "removalReason": null
       }
     },
-    "lastSuccess": "2026-11-11T00:54:24Z"
+    "lastSuccess": "2026-11-11T13:13:42Z"
   },
   "status": {
-    "lastAttempt": "2026-11-11T07:04:02Z",
-    "lastSuccess": "2026-11-11T00:54:24Z",
-    "refreshStatus": "failed",
-    "error": "source_http",
+    "lastAttempt": "2026-11-11T13:13:42Z",
+    "lastSuccess": "2026-11-11T13:13:42Z",
+    "refreshStatus": "ok",
+    "error": null,
     "sourceCount": 2,
     "feedCount": 2,
     "pagesChecked": 57,
