@@ -9656,12 +9656,12 @@
       "start": "2026-11-11T06:00:00.000Z",
       "end": "2026-12-12T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-11T06:56:57Z"
+    "lastSuccess": "2026-11-11T07:57:17Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-11T06:56:57Z",
-    "lastSuccess": "2026-11-11T06:56:57Z",
+    "lastAttempt": "2026-11-11T07:57:17Z",
+    "lastSuccess": "2026-11-11T07:57:17Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
