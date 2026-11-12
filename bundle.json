@@ -9542,12 +9542,12 @@
       "start": "2026-11-12T06:00:00.000Z",
       "end": "2026-12-13T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-12T07:04:23Z"
+    "lastSuccess": "2026-11-12T08:04:45Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-12T07:04:23Z",
-    "lastSuccess": "2026-11-12T07:04:23Z",
+    "lastAttempt": "2026-11-12T08:04:45Z",
+    "lastSuccess": "2026-11-12T08:04:45Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
