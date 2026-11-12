@@ -9504,12 +9504,12 @@
       "start": "2026-11-12T06:00:00.000Z",
       "end": "2026-12-13T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-12T13:06:23Z"
+    "lastSuccess": "2026-11-12T14:06:41Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-12T13:06:23Z",
-    "lastSuccess": "2026-11-12T13:06:23Z",
+    "lastAttempt": "2026-11-12T14:06:41Z",
+    "lastSuccess": "2026-11-12T14:06:41Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
