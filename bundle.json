@@ -9485,12 +9485,12 @@
       "start": "2026-11-11T06:00:00.000Z",
       "end": "2026-12-12T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-12T04:03:29Z"
+    "lastSuccess": "2026-11-12T05:03:45Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-12T04:03:29Z",
-    "lastSuccess": "2026-11-12T04:03:29Z",
+    "lastAttempt": "2026-11-12T05:03:45Z",
+    "lastSuccess": "2026-11-12T05:03:45Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
