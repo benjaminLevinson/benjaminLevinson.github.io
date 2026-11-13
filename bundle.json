@@ -9352,12 +9352,12 @@
       "start": "2026-11-13T06:00:00.000Z",
       "end": "2026-12-14T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-13T19:15:36Z"
+    "lastSuccess": "2026-11-13T20:15:54Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-13T19:15:36Z",
-    "lastSuccess": "2026-11-13T19:15:36Z",
+    "lastAttempt": "2026-11-13T20:15:54Z",
+    "lastSuccess": "2026-11-13T20:15:54Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
