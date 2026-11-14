@@ -9371,12 +9371,12 @@
       "start": "2026-11-14T06:00:00.000Z",
       "end": "2026-12-15T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-14T22:23:46Z"
+    "lastSuccess": "2026-11-14T23:24:06Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-14T22:23:46Z",
-    "lastSuccess": "2026-11-14T22:23:46Z",
+    "lastAttempt": "2026-11-14T23:24:06Z",
+    "lastSuccess": "2026-11-14T23:24:06Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
