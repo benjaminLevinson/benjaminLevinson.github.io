@@ -9257,12 +9257,12 @@
       "start": "2026-11-13T06:00:00.000Z",
       "end": "2026-12-14T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-14T04:18:15Z"
+    "lastSuccess": "2026-11-14T05:18:32Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-14T04:18:15Z",
-    "lastSuccess": "2026-11-14T04:18:15Z",
+    "lastAttempt": "2026-11-14T05:18:32Z",
+    "lastSuccess": "2026-11-14T05:18:32Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
