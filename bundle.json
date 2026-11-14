@@ -9447,12 +9447,12 @@
       "start": "2026-11-14T06:00:00.000Z",
       "end": "2026-12-15T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-14T06:18:49Z"
+    "lastSuccess": "2026-11-14T07:19:08Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-14T06:18:49Z",
-    "lastSuccess": "2026-11-14T06:18:49Z",
+    "lastAttempt": "2026-11-14T07:19:08Z",
+    "lastSuccess": "2026-11-14T07:19:08Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
