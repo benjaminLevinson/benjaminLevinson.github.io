@@ -9276,12 +9276,12 @@
       "start": "2026-11-13T06:00:00.000Z",
       "end": "2026-12-14T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-14T00:17:04Z"
+    "lastSuccess": "2026-11-14T01:17:23Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-14T00:17:04Z",
-    "lastSuccess": "2026-11-14T00:17:04Z",
+    "lastAttempt": "2026-11-14T01:17:23Z",
+    "lastSuccess": "2026-11-14T01:17:23Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
