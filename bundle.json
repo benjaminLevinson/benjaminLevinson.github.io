@@ -43,16 +43,16 @@
         "removalReason": null
       }
     },
-    "lastSuccess": "2026-11-15T03:25:25Z"
+    "lastSuccess": "2026-11-15T09:34:25Z"
   },
   "status": {
-    "lastAttempt": "2026-11-15T03:25:25Z",
-    "lastSuccess": "2026-11-15T03:25:25Z",
+    "lastAttempt": "2026-11-15T09:34:25Z",
+    "lastSuccess": "2026-11-15T09:34:25Z",
     "refreshStatus": "ok",
     "error": null,
     "sourceCount": 2,
     "feedCount": 2,
-    "pagesChecked": 55,
+    "pagesChecked": 53,
     "coverageStart": "2026-11-01",
     "coverageEnd": "2027-01-09",
     "staleAfterHours": 14
