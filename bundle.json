@@ -9485,19 +9485,19 @@
       "start": "2026-11-15T06:00:00.000Z",
       "end": "2026-12-16T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-15T16:29:27Z"
+    "lastSuccess": "2026-11-15T17:29:42Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-15T16:29:27Z",
-    "lastSuccess": "2026-11-15T16:29:27Z",
+    "lastAttempt": "2026-11-15T17:29:42Z",
+    "lastSuccess": "2026-11-15T17:29:42Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-15T06:00:00.000Z",
       "end": "2026-12-16T06:00:00.000Z"
     },
-    "sourceCount": 233,
+    "sourceCount": 232,
     "feedCount": 498,
     "staleAfterHours": 6
   },
