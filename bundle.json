@@ -9618,12 +9618,12 @@
       "start": "2026-11-16T06:00:00.000Z",
       "end": "2026-12-17T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-16T10:34:59Z"
+    "lastSuccess": "2026-11-16T11:35:17Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-16T10:34:59Z",
-    "lastSuccess": "2026-11-16T10:34:59Z",
+    "lastAttempt": "2026-11-16T11:35:17Z",
+    "lastSuccess": "2026-11-16T11:35:17Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
