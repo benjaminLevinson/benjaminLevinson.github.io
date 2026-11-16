@@ -9390,12 +9390,12 @@
       "start": "2026-11-15T06:00:00.000Z",
       "end": "2026-12-16T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-16T02:32:31Z"
+    "lastSuccess": "2026-11-16T03:32:52Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-16T02:32:31Z",
-    "lastSuccess": "2026-11-16T02:32:31Z",
+    "lastAttempt": "2026-11-16T03:32:52Z",
+    "lastSuccess": "2026-11-16T03:32:52Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
