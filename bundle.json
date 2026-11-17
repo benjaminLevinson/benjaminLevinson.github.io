@@ -9656,19 +9656,19 @@
       "start": "2026-11-17T06:00:00.000Z",
       "end": "2026-12-18T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-17T22:45:52Z"
+    "lastSuccess": "2026-11-17T23:46:09Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-17T22:45:52Z",
-    "lastSuccess": "2026-11-17T22:45:52Z",
+    "lastAttempt": "2026-11-17T23:46:09Z",
+    "lastSuccess": "2026-11-17T23:46:09Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-17T06:00:00.000Z",
       "end": "2026-12-18T06:00:00.000Z"
     },
-    "sourceCount": 235,
+    "sourceCount": 234,
     "feedCount": 507,
     "staleAfterHours": 6
   },
