@@ -9561,12 +9561,12 @@
       "start": "2026-11-16T06:00:00.000Z",
       "end": "2026-12-17T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-17T02:39:47Z"
+    "lastSuccess": "2026-11-17T03:40:06Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-17T02:39:47Z",
-    "lastSuccess": "2026-11-17T02:39:47Z",
+    "lastAttempt": "2026-11-17T03:40:06Z",
+    "lastSuccess": "2026-11-17T03:40:06Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
