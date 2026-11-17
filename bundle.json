@@ -9561,19 +9561,19 @@
       "start": "2026-11-16T06:00:00.000Z",
       "end": "2026-12-17T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-16T22:38:32Z"
+    "lastSuccess": "2026-11-17T00:39:09Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-16T23:38:52Z",
-    "lastSuccess": "2026-11-16T22:38:32Z",
-    "refreshStatus": "failed",
-    "error": "incomplete",
+    "lastAttempt": "2026-11-17T00:39:09Z",
+    "lastSuccess": "2026-11-17T00:39:09Z",
+    "refreshStatus": "ok",
+    "error": null,
     "coverage": {
       "start": "2026-11-16T06:00:00.000Z",
       "end": "2026-12-17T06:00:00.000Z"
     },
-    "sourceCount": 236,
+    "sourceCount": 232,
     "feedCount": 502,
     "staleAfterHours": 6
   },
