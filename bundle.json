@@ -4421,9 +4421,9 @@
         "sequence": 0,
         "created": "2026-10-17T05:05:30Z",
         "modified": "2026-10-17T05:05:30Z",
-        "missingSince": null,
-        "missingCount": 0,
-        "lastMissingCheck": null,
+        "missingSince": "2026-11-17T01:39:30Z",
+        "missingCount": 1,
+        "lastMissingCheck": "2026-11-17T01:39:30Z",
         "cancellationReason": null
       },
       "101506": {
@@ -9561,19 +9561,19 @@
       "start": "2026-11-16T06:00:00.000Z",
       "end": "2026-12-17T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-17T00:39:09Z"
+    "lastSuccess": "2026-11-17T01:39:30Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-17T00:39:09Z",
-    "lastSuccess": "2026-11-17T00:39:09Z",
+    "lastAttempt": "2026-11-17T01:39:30Z",
+    "lastSuccess": "2026-11-17T01:39:30Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-16T06:00:00.000Z",
       "end": "2026-12-17T06:00:00.000Z"
     },
-    "sourceCount": 232,
+    "sourceCount": 230,
     "feedCount": 502,
     "staleAfterHours": 6
   },
