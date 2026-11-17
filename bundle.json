@@ -9694,12 +9694,12 @@
       "start": "2026-11-17T06:00:00.000Z",
       "end": "2026-12-18T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-17T16:44:07Z"
+    "lastSuccess": "2026-11-17T17:44:24Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-17T16:44:07Z",
-    "lastSuccess": "2026-11-17T16:44:07Z",
+    "lastAttempt": "2026-11-17T17:44:24Z",
+    "lastSuccess": "2026-11-17T17:44:24Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
