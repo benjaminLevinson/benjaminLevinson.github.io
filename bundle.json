@@ -9732,12 +9732,12 @@
       "start": "2026-11-18T06:00:00.000Z",
       "end": "2026-12-19T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-18T16:51:32Z"
+    "lastSuccess": "2026-11-18T17:51:51Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-18T16:51:32Z",
-    "lastSuccess": "2026-11-18T16:51:32Z",
+    "lastAttempt": "2026-11-18T17:51:51Z",
+    "lastSuccess": "2026-11-18T17:51:51Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
