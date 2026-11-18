@@ -9637,12 +9637,12 @@
       "start": "2026-11-17T06:00:00.000Z",
       "end": "2026-12-18T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-18T02:47:05Z"
+    "lastSuccess": "2026-11-18T03:47:24Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-18T02:47:05Z",
-    "lastSuccess": "2026-11-18T02:47:05Z",
+    "lastAttempt": "2026-11-18T03:47:24Z",
+    "lastSuccess": "2026-11-18T03:47:24Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
