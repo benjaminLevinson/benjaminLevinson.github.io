@@ -9751,19 +9751,19 @@
       "start": "2026-11-18T06:00:00.000Z",
       "end": "2026-12-19T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-18T12:50:14Z"
+    "lastSuccess": "2026-11-18T13:50:35Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-18T12:50:14Z",
-    "lastSuccess": "2026-11-18T12:50:14Z",
+    "lastAttempt": "2026-11-18T13:50:35Z",
+    "lastSuccess": "2026-11-18T13:50:35Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-18T06:00:00.000Z",
       "end": "2026-12-19T06:00:00.000Z"
     },
-    "sourceCount": 235,
+    "sourceCount": 234,
     "feedCount": 512,
     "staleAfterHours": 6
   },
