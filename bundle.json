@@ -9599,12 +9599,12 @@
       "start": "2026-11-18T06:00:00.000Z",
       "end": "2026-12-19T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-19T02:54:33Z"
+    "lastSuccess": "2026-11-19T03:54:49Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-19T02:54:33Z",
-    "lastSuccess": "2026-11-19T02:54:33Z",
+    "lastAttempt": "2026-11-19T03:54:49Z",
+    "lastSuccess": "2026-11-19T03:54:49Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
