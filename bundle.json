@@ -9523,12 +9523,12 @@
       "start": "2026-11-20T06:00:00.000Z",
       "end": "2026-12-21T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-20T13:05:00Z"
+    "lastSuccess": "2026-11-20T14:05:20Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-20T13:05:00Z",
-    "lastSuccess": "2026-11-20T13:05:00Z",
+    "lastAttempt": "2026-11-20T14:05:20Z",
+    "lastSuccess": "2026-11-20T14:05:20Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
