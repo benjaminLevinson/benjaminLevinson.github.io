@@ -9580,12 +9580,12 @@
       "start": "2026-11-21T06:00:00.000Z",
       "end": "2026-12-22T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-21T11:11:37Z"
+    "lastSuccess": "2026-11-21T12:11:56Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-21T11:11:37Z",
-    "lastSuccess": "2026-11-21T11:11:37Z",
+    "lastAttempt": "2026-11-21T12:11:56Z",
+    "lastSuccess": "2026-11-21T12:11:56Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
