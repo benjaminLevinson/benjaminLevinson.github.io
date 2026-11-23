@@ -9732,19 +9732,19 @@
       "start": "2026-11-23T06:00:00.000Z",
       "end": "2026-12-24T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-23T16:28:06Z"
+    "lastSuccess": "2026-11-23T18:28:38Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-23T17:28:22Z",
-    "lastSuccess": "2026-11-23T16:28:06Z",
-    "refreshStatus": "failed",
-    "error": "incomplete",
+    "lastAttempt": "2026-11-23T18:28:38Z",
+    "lastSuccess": "2026-11-23T18:28:38Z",
+    "refreshStatus": "ok",
+    "error": null,
     "coverage": {
       "start": "2026-11-23T06:00:00.000Z",
       "end": "2026-12-24T06:00:00.000Z"
     },
-    "sourceCount": 240,
+    "sourceCount": 237,
     "feedCount": 511,
     "staleAfterHours": 6
   },
