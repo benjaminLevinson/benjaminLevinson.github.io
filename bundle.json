@@ -9865,12 +9865,12 @@
       "start": "2026-11-24T06:00:00.000Z",
       "end": "2026-12-25T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-24T16:35:20Z"
+    "lastSuccess": "2026-11-24T17:35:37Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-24T16:35:20Z",
-    "lastSuccess": "2026-11-24T16:35:20Z",
+    "lastAttempt": "2026-11-24T17:35:37Z",
+    "lastSuccess": "2026-11-24T17:35:37Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
