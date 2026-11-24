@@ -9903,12 +9903,12 @@
       "start": "2026-11-24T06:00:00.000Z",
       "end": "2026-12-25T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-24T08:32:52Z"
+    "lastSuccess": "2026-11-24T09:33:11Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-24T08:32:52Z",
-    "lastSuccess": "2026-11-24T08:32:52Z",
+    "lastAttempt": "2026-11-24T09:33:11Z",
+    "lastSuccess": "2026-11-24T09:33:11Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
