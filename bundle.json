@@ -9903,19 +9903,19 @@
       "start": "2026-11-25T06:00:00.000Z",
       "end": "2026-12-26T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-25T13:41:17Z"
+    "lastSuccess": "2026-11-25T14:41:34Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-25T13:41:17Z",
-    "lastSuccess": "2026-11-25T13:41:17Z",
+    "lastAttempt": "2026-11-25T14:41:34Z",
+    "lastSuccess": "2026-11-25T14:41:34Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
       "start": "2026-11-25T06:00:00.000Z",
       "end": "2026-12-26T06:00:00.000Z"
     },
-    "sourceCount": 233,
+    "sourceCount": 232,
     "feedCount": 520,
     "staleAfterHours": 6
   },
