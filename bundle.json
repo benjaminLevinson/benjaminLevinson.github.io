@@ -9751,12 +9751,12 @@
       "start": "2026-11-26T06:00:00.000Z",
       "end": "2026-12-27T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-26T13:47:51Z"
+    "lastSuccess": "2026-11-26T14:48:08Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-26T13:47:51Z",
-    "lastSuccess": "2026-11-26T13:47:51Z",
+    "lastAttempt": "2026-11-26T14:48:08Z",
+    "lastSuccess": "2026-11-26T14:48:08Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
