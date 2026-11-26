@@ -9789,12 +9789,12 @@
       "start": "2026-11-26T06:00:00.000Z",
       "end": "2026-12-27T06:00:00.000Z"
     },
-    "lastSuccess": "2026-11-26T11:47:21Z"
+    "lastSuccess": "2026-11-26T12:47:36Z"
   },
   "status": {
     "schemaVersion": 1,
-    "lastAttempt": "2026-11-26T11:47:21Z",
-    "lastSuccess": "2026-11-26T11:47:21Z",
+    "lastAttempt": "2026-11-26T12:47:36Z",
+    "lastSuccess": "2026-11-26T12:47:36Z",
     "refreshStatus": "ok",
     "error": null,
     "coverage": {
